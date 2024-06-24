@@ -1,0 +1,213 @@
+body {
+    background-image:url(Artboard_1-8.png);
+    background-size:cover ;
+      font-family: "Karla", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 300;
+      font-style: normal;
+}
+
+
+p {
+    color:white
+}
+
+#main{
+    text-align: left;
+}
+
+h4{color: white;}
+h2{color: white;}
+h1{color: white;}
+
+nav ul { 
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0; 
+    list-style: none; 
+    display: table;
+    width: 800px;
+    text-align: center;
+  }
+ nav li { 
+    display: table-cell; 
+    position: relative; 
+    padding: 15px 0;
+  }
+  nav ul li a {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
+  }
+  nav ul li a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  nav ul li a:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+  @media screen and (max-height: 300px) {
+      ul {
+          margin-top: 40px;
+      }
+  }
+
+  
+
+section{
+    float: center;
+}
+
+
+footer p {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.blok{
+    width:30%; 
+    margin:1%;
+    float:left; 
+    text-align:justify; 
+    box-shadow:0px 0px 10px rgb(90, 4, 124);
+    padding:0.5%; 
+    border-radius:10px;
+    
+}
+
+#button1 {
+    background-image: linear-gradient(#8f51e1,#7052e0);
+    border: solid;
+    color: white;
+    padding: 15px 36px ;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius:10px;
+    border-color:transparent;
+    transition: 0.7s ease-out;
+            
+}
+
+#button1:hover {
+    border: solid;
+    border-color: rgb(90, 4, 124);
+    background-color: rgba(255,0,0,0);
+    padding: 15px 36px; 
+    border: solid;
+    border-radius:10px;
+    border-color:transparent;
+    font-size:medium;
+        
+}
+
+/*
+#button1::after{
+    background-image: linear-gradient(#8f51e1,#7052e0);
+    border: solid;
+    color: white;
+    padding: 15px 36px ;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius:10px;
+    border-color:transparent;
+    font-size: small;
+    transition: 0.7s ease-in-out;
+}
+*/
+
+#button2 {
+    background-color: rgba(255,0,0,0);
+    border: solid; 
+    border-color: rgb(90, 4, 124);
+    color: white;
+    padding: 15px 32px ;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius:10px;
+    transition: 0.7s ease-out;
+}
+
+#button2:hover {
+    background-image: linear-gradient(#8f51e1,#7052e0);
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 15px 32px ;
+    margin: 4px 2px;
+    border-color:transparent;
+    font-size:medium;
+}
+
+#main {
+    margin-left: 5%;
+    margin-top: 150px;
+}
+
+img {
+    float: right;    
+}
+
+p {
+    text-align: justify;
+}
+
+#pozicka {
+    text-align: left;
+    color: white;
+    text-align: block;
+}
+
+#vybavenie {
+    text-align: left;
+    color: white;
+    text-align: block;
+}
+
+#vydaje {
+    text-align: left;
+    color: white;
+    text-align: block;
+}
+
+#poziadavky {
+    text-align: left;
+    color: white;
+    text-align: block;
+      
+}
+
+section ul {
+    list-style: none;
+  }
+  
+section ul li:before {
+    content: '✓';
+  }
+
+label {
+    color:white;
+}
