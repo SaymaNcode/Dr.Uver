@@ -1,0 +1,270 @@
+body {
+    background-color:white;
+    background-size:cover ;
+      font-family: "Lato", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 300;
+      font-style: normal;
+}
+
+p{
+    text-align: justify;
+    color:#f5f5f5;
+}
+
+.container{
+    margin:auto;
+    background-color:transparent;
+    display:grid;
+    height:auto;
+    grid-template-columns: 1fr 1fr;
+    grid-row: 2fr 2fr 2fr;
+    grid-column-gap: 1fr;
+    grid-row-gap: 20px;
+}
+
+#misia{
+    color: #f5f5f5;
+    background-color: #597cff;
+}
+
+#img{
+    background-color: #597cff;
+    
+}
+
+nav ul { 
+    margin-left: auto;
+    margin-right: 0;
+    padding: 0; 
+    list-style: none; 
+    display: table;
+    width: 700px;
+    text-align: right;
+  }
+nav li { 
+    display: table-cell; 
+    position: relative; 
+    padding: 5px 0;
+  }
+  nav ul li a {
+    color: #597cff;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
+  }
+  nav ul li a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #597cff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  nav ul li a:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+  @media screen and (max-height: 300px) {
+      ul {
+          margin-top: 40px;
+      }
+  }
+
+footer {
+  display: grid;
+  grid-template-columns:  2fr 2fr ;
+  grid-template-rows: auto auto auto;
+  justify-content: center;
+  background-color: #D6D6D6; 
+  align-items: center;
+  padding: 20px; 
+}
+
+.footer_grid {
+  margin: 0 20px; /* Adjust the margin as needed */
+  width: 400px;
+  height: auto;
+  background-color:#D6D6D6;
+  padding: 20px;
+  text-align: left;
+  color:white;
+}
+
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 0px 2px;
+    color:white;
+    
+  }
+.fa-facebook {
+    transition: 0.7s ease-out;
+  }
+
+.fa-facebook:hover {
+    color: #0056b3;
+    transition: 0.7s ease-out;
+  }
+
+.fa-instagram{
+    transition: 0.7s ease-out;
+}
+
+.fa-instagram:hover {
+    color: #0056b3;
+    transition: 0.7s ease-out;
+  }
+
+.kontakt_grid{
+    margin: 0 20px;
+    width: 400px;
+    height: 400px;
+    background-color: transparent;
+    padding: 20px;
+    text-align: left;
+}
+
+#kontakt{
+  text-align: left;
+}
+
+input[type=text], select, textarea {    
+  resize: none; 
+}
+
+.footer_grid a{
+  text-decoration: none;
+  color: white;
+  transition: 0.4s ease-out;
+}
+
+.footer_grid a:hover {
+  color:#0056b3 ;
+  transition: 0.4s ease-in;
+}
+
+section{ 
+display: grid;
+grid-template-columns: auto auto auto;
+justify-content: center;
+background-color: #597cff;
+padding: 20px;
+align-items: center;
+}
+
+h1,h2,h3,h4,h5{
+  color: #f5f5f5;
+}
+
+.products_grid{
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr 1fr;
+  grid-template-rows:auto auto auto auto;
+  background-color: #597cff;
+  grid-template-areas: 
+  'left leftmid rightmid right'
+  'left2 leftmid2 rightmid2 right2'
+  'left3 leftmid3 rightmid3 right3'
+}
+
+#uver-right{
+  grid-area: rightmid;
+  text-align: justify;
+}
+
+#leasing-left{
+  grid-area: leftmid2;
+  color: black;  
+  list-style-image: none;
+}
+
+#byvanie-right{
+  grid-area: rightmid3;
+}
+
+.vitamta{
+  display: grid;
+  grid-template-columns: 0.5fr 1.25fr 2fr 1fr;
+  grid-template-rows:auto auto auto auto;
+  background-color:white;
+  grid-template-areas:
+  'empty text img empty2';
+}
+
+#text-left{
+  grid-area: text;
+}
+
+.four{
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr 0.5fr;
+  grid-template-rows:auto auto auto auto;
+  background-color:white;
+  grid-column-gap: 40px;
+  grid-template-areas:
+  'empty pro fast effi online empty2';
+}
+
+#pro{
+  grid-area: pro;    
+}
+
+#fast{
+  grid-area: fast;
+}
+
+#effi{
+  grid-area: effi;
+}
+
+#online{
+  grid-area: online;
+}
+
+.vyhpod{
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 2fr 0.5fr;
+  grid-template-rows:auto auto auto auto;
+  background-color:white;
+  grid-template-areas:
+  'empty vyhody empty2'
+  'empty obraz podmienky';
+}
+
+#vyhody{
+  grid-area: vyhody;
+}
+
+#podmienky{
+  grid-area: podmienky;
+}
+
+.obrazdown{
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 2fr 0.5fr;
+  grid-template-rows: auto auto auto auto;
+  background-color: #597cff;
+  grid-template-areas:
+  'prazdno procesy tlacitko prazdnota';
+}
+
+#tlacidlo{
+  grid-area: tlacitko;
+}
+
+#proces{
+  grid-area: procesy;
+}
+
