@@ -237,8 +237,9 @@ h1,h2,h3,h4,h5{
 
 #produkt_row1{
   background-image: url(images/nasa_misia.png);
-  background-size: 100%;
+  background-size: 150%;
   background-position: center;
+  height: 525px;
 }
 
 #uver-right{
@@ -847,10 +848,9 @@ input::-webkit-inner-spin-button {
   background-color: rgba(202, 202, 202, 0.750);
   min-width: 160px;
   z-index: 1;
-  width: 200px;
+  width: 240px;
   text-align: center;
   border-radius: 16px;
-  margin-left: 20px;
 }
 
 .roleta a{
