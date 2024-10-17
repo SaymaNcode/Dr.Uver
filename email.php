@@ -11,7 +11,4 @@
     mail($recipient, $predmet, $subject, $mailheader)
     or die ("Error!");
 
-
-
-
 ?>

@@ -105,6 +105,18 @@
                         <br><br>
                         <input type="hidden">
                     </div>
+                    <div class="tel">
+                        <label for="tel_cislo"><strong>TELEFÓNNY KONTAKT</strong></label>
+                        <br>
+                        <input type="tel" id="tel_cislo" name="phone_number" placeholder="947-XXX-XXX" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
+                        <br><br>
+                    </div>
+                    <div class="mail">
+                        <label for="email"><strong>E-MAILOVÁ ADRESA</strong></label>
+                        <br>
+                        <input type="email" id="email" name="email">
+                        <br><br>
+                    </div>
                     <div class="obpc">
                         <br><br>
                         <label for="obpcislo"><strong>ČÍSLO OBČIANSKEHO PREUKAZU</strong></label>
@@ -120,7 +132,7 @@
                         <br><br>
                     </div>
                     <div class="ulica">
-                        <label for="adresa"><strong>ADRESA</strong></label>
+                        <label for="adresa" style="font-size: 18px;"><strong>ADRESA</strong></label>
                         <br>
                         <label for="ulica_cislo"><strong>ULICA,ČÍSLO</strong></label>
                         <br>
@@ -136,6 +148,7 @@
                     </div>
                 </div>
                     <div class="rod_stav">
+                        <br><br>
                         <label for="rodin_stav"><strong>RODINNÝ STAV</strong></label>
                         <br>
                         <input type="radio" id="slobod" name="rodin_stav" value="slobodny_slobodna" required >
@@ -144,7 +157,6 @@
                         <label for="zenaty_vydata">ŽENATÝ/VYDATÁ</label>
                         <input type="radio" id="vdovec" name="rodin_stav" value="vdovec_vdova" required>
                         <label for="vdovec_vdova">VDOVEC/VDOVA</label>
-                        <br><br>
                     </div>
                 <div class="form-grid">
                     <div class="deti">
@@ -156,19 +168,7 @@
                     <div class="empty">
                         <br><br>
                         <input type="hidden">
-                    </div>
-                    <div class="tel">
-                        <label for="tel_cislo"><strong>TELEFÓNNY KONTAKT</strong></label>
-                        <br>
-                        <input type="tel" id="tel_cislo" name="phone_number" placeholder="947-XXX-XXX" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
-                        <br><br>
-                    </div>
-                    <div class="mail">
-                        <label for="email"><strong>E-MAILOVÁ ADRESA</strong></label>
-                        <br>
-                        <input type="email" id="email" name="email">
-                        <br><br>
-                    </div>
+                    </div>  
                 </div>
             </form>
         </div>
