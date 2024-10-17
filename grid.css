@@ -1,0 +1,885 @@
+body {
+    background-color:white;
+    background-size:cover ;
+      font-family: "Lato", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 300;
+      font-style: normal;
+}
+/*
+@media screen and  (max-width:639px) 
+{
+  body {background-color: rgb(255,204,255)}
+  .blok{width:98%; margin:1% 1%; background-color: rgb(153,153,255); height:22%; float:left}
+}
+
+@media screen and (min-width:640px) and (max-width:1099px) 
+{
+  body {background-color: rgb(204,204,255)}
+  .blok{width:48%; margin:1%; background-color: rgb(153,153,255); height:44%; float:left}
+
+}
+
+@media screen and (min-width:1100px)              
+{
+  body { background-color: rgb(153,204,255) }
+  .blok{width:23%; margin:1%; background-color: rgb(153,153,255); height:50%; float:left}
+}
+*/
+p{
+    text-align: justify;
+    color:#f5f5f5;
+}
+
+.container{
+    margin:auto;
+    background-color:#ffffff;
+    display:grid;
+    height:auto;
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+    grid-row: auto auto auto auto;
+    grid-column-gap: 50px;
+    grid-row-gap: 20px;
+    grid-template-areas:
+    'prazdn tim historia prazdno';
+}
+
+#misia{
+  background-size: cover; /* Resize the background image to cover the entire container */
+  height: 530px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  width: auto;
+  grid-area: misia;
+  
+}
+
+#druver{
+  grid-area: obrazok;
+}
+
+#tim{
+  grid-area: tim;
+}
+
+#history{
+  grid-area: historia;
+}
+
+nav img{
+  scale: 0.4;
+  float: center;
+  margin-bottom: -9%; 
+  margin-left: 15%;
+}
+
+
+nav ul { 
+    margin-left: auto;
+    margin-right: 50px;
+    padding: 0; 
+    list-style: none; 
+    display: table;
+    width: 600px;
+    text-align: center;
+}
+
+nav li { 
+    display: table-cell; 
+    position: relative; 
+    padding: 5px 0;
+  }
+  nav ul li a {
+    color: #597cff;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
+  }
+  nav ul li a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #597cff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  nav ul li a:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+  @media screen and (max-height: 300px) {
+      ul {
+          margin-top: 40px;
+      }
+  }
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr 1fr ;
+  grid-template-rows: auto auto auto;
+  justify-content: center;
+  background-color: #D6D6D6; 
+  align-items: center;
+  padding: 20px; 
+  grid-template-areas: 
+  ' empty skratka navig empty2 ';
+  margin-top: 50px;
+}
+
+.footer_grid {
+  margin: 0 20px; /* Adjust the margin as needed */
+  width: 400px;
+  height: auto;
+  background-color:#D6D6D6;
+  padding: 20px;
+  text-align: left;
+  color:white;
+}
+
+#navigacia{
+  grid-area: navig;
+}
+
+#skratka{
+  grid-area: skratka;
+}
+
+.fa {
+    padding: 25px;
+    font-size: 50px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 0px 2px;
+    color:white;
+    
+  }
+.fa-facebook {
+    transition: 0.7s ease-out;
+    font-size: 35px;
+  }
+
+.fa-facebook:hover {
+    color: #0056b3;
+    transition: 0.7s ease-out;
+  }
+
+.fa-instagram{
+    transition: 0.7s ease-out;
+    font-size: 35px;
+}
+
+.fa-instagram:hover {
+    color: #0056b3;
+    transition: 0.7s ease-out;
+  }
+
+.kontakt_grid{
+    margin: 0 20px;
+    width: 400px;
+    height: 400px;
+    background-color: transparent;
+    padding: 20px;
+    text-align: left;
+}
+
+#kontakt{
+  text-align: left;
+}
+
+input[type=text], select, textarea {    
+  resize: none; 
+  font-family: "Lato",sans-serif;
+}
+
+.footer_grid a{
+  text-decoration: none;
+  color: white;
+  transition: 0.4s ease-out;
+}
+
+.footer_grid a:hover {
+  color:#0056b3 ;
+  transition: 0.4s ease-in;
+}
+
+section{ 
+display: grid;
+grid-template-columns: auto auto auto;
+justify-content: center;
+background-image: url(images/KONTAKT.png);
+background-position: center;
+padding: 20px;
+align-items: center;
+}
+
+h1,h2,h3,h4,h5{
+  color: #f5f5f5;
+}
+
+.products_grid{
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr 1fr ;
+  grid-template-rows:auto auto auto auto;
+  background-color: transparent;
+  grid-template-areas: 
+  'left leftmid rightmid right'
+  'left2 leftmid2 rightmid2 right2'
+  'left3 leftmid3 rightmid3 right3';
+}
+
+#produkt_row1{
+  background-image: url(images/nasa_misia.png);
+  background-size: 100%;
+  background-position: center;
+}
+
+#uver-right{
+  grid-area: leftmid;
+  text-align: justify;
+  width: 135%;
+
+}
+
+#uver_img{
+  grid-area:left;
+}
+
+#produkt_row2{
+  background-image: url(images/leasing-bg.png);
+  background-size: 100%;
+  background-position: center;
+}
+
+#leasing-left{
+  grid-area: leftmid2;
+  color: #3b3b3b; 
+  list-style-image: none;
+  text-align: justify;
+  width: 175%;
+
+}
+
+
+#leasing_img{
+  grid-area: right2;
+  color: #3b3b3b;
+} 
+
+#produkt_row3{
+  background-image: url(images/nasa_misia.png);
+  background-size: 100%;
+  background-position: center;
+}
+
+#byvanie-right{
+  grid-area: rightmid3;
+  text-align: justify;
+  width: 175%;
+  margin-left: -100%;
+}
+
+#hypoteka_img{
+  grid-area: left3;
+  height: auto;
+  width: 100%;
+  margin-right: 10%;
+}
+
+.vitamta{
+  display: grid;
+  grid-template-columns: 0.5fr 1.25fr 2fr ;
+  grid-template-rows:auto auto auto auto;
+  background-color:white;
+  grid-template-areas:
+  'empty text img empty2';
+}
+
+#text-left{
+  grid-area: text;
+}
+
+#vitamta_img{
+  grid-area: img;
+}
+
+.four{
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr 0.5fr;
+  grid-template-rows:  400px;
+  background-color:white;
+  grid-column-gap: 20px;
+  grid-template-areas:
+  'empty pro fast effi online empty2';
+  
+}
+
+#pro{
+  grid-area: pro;
+  height: 250px;
+  width: 175px;    
+  text-align: center;
+}
+
+#fast{
+  grid-area: fast;
+  height: 250px;
+  width: 175px;    
+}
+
+#effi{
+  grid-area: effi;
+  height: 250px;
+  width: 175px;    
+}
+
+#online{ 
+  grid-area: online;
+  height: 250px;
+  width: 175px;     
+}
+
+.vyhpod{
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 2fr 0.5fr;
+  grid-template-rows:auto auto auto auto;
+  background-color:white;
+  grid-column-gap: 40px;
+  grid-template-areas:
+  'empty1 vyhody empty2'
+  'empty3 obraz podmienky'
+  'empty4 textdown button';
+}
+
+#vyhody{
+  grid-area: vyhody;
+}
+
+#podmienky{
+  grid-area: podmienky;
+  color:white;
+}
+
+
+#tlacidlo{
+  grid-area: button;
+  
+}
+
+#proces{
+  grid-area: textdown;
+}
+
+button{
+  align-items: center;
+  background-color: #0A66C2;
+  border: 0;
+  border-radius: 100px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-flex; 
+  justify-content: center;
+  width: 240px;
+  line-height: 20px;
+  max-width: 480px;
+  min-height: 40px;
+  min-width: 0px;
+  overflow: hidden;
+  padding: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  transition: 0.7s;
+} 
+button:hover,button::after { 
+  background-color: #D6D6D6;
+  color: #0056B3;
+
+}
+  
+button:active {
+  background-color: #D6D6D6;
+  color: #0056B3;
+}
+  
+button:disabled { 
+  cursor: not-allowed;
+  background: rgba(0, 0, 0, .08);
+  color: rgba(0, 0, 0, .3);
+}
+
+#main{
+  background-image: url(images/main_img.png);
+  background-color: #597cff; /* Used if the image is unavailable */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  height: 530px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  width: auto;
+}
+
+#button1{ 
+  top: 50%;
+  left: 30%;
+}
+
+#button2{
+
+  top: 50%;
+  left:50%;
+}
+
+#main_button{
+  width: 520px;
+  height: 40px;
+  margin-left: 32.5%;
+}
+
+#podmienky_img{
+  grid-area: obraz;
+}
+
+#podmienky_button{
+  width: 60%;
+  height: 60%;
+  font-size:120%;
+}
+
+input{
+  background-color: #85c2ff52;
+  border: 0;
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: #ffffff;
+  font-family: "Lato", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+textarea{
+  background-color: #85c2ff52;
+  border: 0;
+  border-radius: 10px;
+  box-sizing: border-box;
+  color: #ffffff;
+  font-family: "Lato", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.aboutus_row1{
+  margin: auto;
+  margin-top: -1.5%;
+  background-image:url(images/nasa_misia.png);
+  background-size: 85%;
+  background-position: center;
+  display:grid;
+  height:auto;
+  grid-template-columns:  2fr 2fr 1fr;
+  grid-row: auto auto auto auto;
+  grid-column-gap: 1fr;
+  grid-row-gap: 20px;
+  grid-template-areas:
+  ' obrazok misia prazd';
+}
+
+.lastrowindex{
+  margin:auto;
+  margin-top: 50px;
+  background-image: url(images/podmienky-bg.png);
+  background-size: 85%;
+  background-position: center;
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 2fr 0.5fr;
+  grid-template-rows:auto auto auto auto;
+  background-color:white;
+  grid-column-gap: 40px;
+  grid-template-areas:
+  'empty obraz podmienky'
+  'empty textdown button';
+}
+
+#podmienky ul {
+  list-style-type: disc;
+}
+
+#podmienky li::marker{
+  color:white
+}
+
+#FAQ{
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr ;
+  grid-template-rows: auto;
+  grid-template-areas: 
+  'empty text fotka empty2';
+  background-image: url(images/KONTAKT.png);
+  background-color: #597cff; /* Used if the image is unavailable */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  height: 200px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  width: auto;
+}
+
+#FAQ h1{
+  grid-area: text;
+  align-content: center;
+}
+
+#FAQ h4{
+  grid-area: text;
+  align-content: center;
+  margin-top: 150px;
+}
+
+.FAQ_grid{
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr  ;
+  grid-template-rows:auto auto auto auto auto auto auto auto auto auto auto auto ;
+  grid-column-gap: 40px;
+  grid-template-areas:
+  'empty FAQ empty1'
+  'empty2 FAQ1 empty3'
+  'empty4 FAQ2 empty5'
+  'empty6 FAQ3 empty7'
+  'empty8 FAQ4 empty9'
+  'empty10 FAQ5 empty11'
+  'empty12 FAQ6 empty13'
+  'empty14 FAQ7 empty15'
+  'empty16 FAQ8 empty17';
+}
+
+.faq_bottom{
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr 1fr ;
+  grid-template-rows: auto auto auto;
+  justify-content: center;
+  background-color: #D6D6D6;
+  background-image: url(images/leasing-bg.png); 
+  background-size:cover;
+  background-size:100%;
+  background-position: center;
+  align-items: center;
+  padding: 20px; 
+  grid-template-areas: 
+  ' empty left right empty2 ';
+  margin-top: 50px; 
+}
+
+#faq_leftbot{
+  grid-area: left;
+}
+
+#faq_rightbot{
+  grid-area: right;
+  margin-bottom: 50px;
+}
+
+#faq{
+  grid-area: FAQ;
+  text-align: justify;
+}
+
+#faq1{
+  grid-area: FAQ1;
+  text-align: justify;
+}
+
+#faq2{
+  grid-area: FAQ2;
+  text-align: justify;
+}
+
+#faq3{
+  grid-area: FAQ3;
+  text-align: justify;
+}
+
+#faq4{
+  grid-area: FAQ4;
+  text-align: justify;
+}
+
+#faq5{
+  grid-area: FAQ5;
+  text-align: justify;
+}
+
+#faq6{
+  grid-area: FAQ6;
+  text-align: justify;
+}
+
+#faq7{
+  grid-area: FAQ7;
+  text-align: justify;
+}
+
+#faq8{
+  grid-area: FAQ8;
+    text-align: justify;
+}
+
+#top_ziadost{
+  height: 500px;
+  background-image: url(images/nasa_misia.png);
+  background-color: #597cff; /* Used if the image is unavailable */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  background-position: center; /* Center the image */
+  background-size: 100%;
+  width: auto;
+}
+
+#loanValue,#repaymentValue{
+  color:#f5f5f5;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
+}
+
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.zamestnavatel_udaje{
+  height: 500px;
+  width: auto;
+  background-image: url(images/KONTAKT.png);
+  background-color: #597cff;
+  background-size: cover;
+  background-position: center;
+}
+
+.FAQ_grid li{
+  margin-left: -7.5%;
+}
+
+.FAQ_grid ul{
+  list-style-image: url(images/fajocka_medium.png);
+}
+
+#vyhody ul{
+  list-style-image: url(images/fajocka_medium.png);
+}
+
+#leasing-left ul{
+  list-style-image: url(images/fajocka_medium.png);
+}
+
+#faq_leftbot{
+  list-style-image: url(images/red_x_24.png);
+}
+
+#faq_rightbot{
+  list-style-image: url(images/red_x_24.png);
+}
+
+.vase_udaje form input {
+  color: #8a8a8a;
+  background-color: #00ffff;
+}
+
+.prilohy input{
+  display: none;
+}
+
+.prilohy label{
+  display: inline-block;
+  cursor: pointer;
+}
+
+.slider-container {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto; /* Center container horizontally */
+}
+
+.slider-wrapper {
+  margin-bottom: 30px;
+  align-items: center; /* Vertically center the slider and text */  
+}
+
+#top_ziadost label  {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  color: #f5f5f5;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 10px;
+    border-radius: 5px;
+    background: black;
+    outline: none;
+    opacity: 0.9;
+    transition: opacity 0.2s;
+}
+
+.slider::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 8px;
+  background: linear-gradient(to right, white 0%, white var(--value), black var(--value), black 100%); /* Left white, right black */
+  border-radius: 4px;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #f5f5f5;
+    cursor: pointer;
+    margin-top: -5px; /* Center the thumb vertically */
+
+}
+
+.slider:focus {
+  outline: none; /* Ensures no outline appears when the slider is focused or active */
+}
+
+.slider::-moz-range-progress {
+  background: #f5f5f5; /* Filled portion is white */
+  height: 8px;
+  border-radius: 4px;
+}
+
+
+.slider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #f5f5f5 ;
+    cursor: pointer;
+}
+
+.slider-value {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+.slider-value span {
+    font-size: 1rem;
+}
+
+.demand_buttony{
+  margin-left: 25%;
+  margin-top: 4%;
+  margin-bottom: 5%;
+  height: 40px;
+  width: 760px;
+}
+
+#button-demand{
+  margin-left:20%; 
+  width:250px; 
+  height: 50px;
+}
+
+.bottom_text{
+  display: flex;
+  align-items: center;
+  padding: 2.5%;
+  margin:auto;
+}
+
+.bottom_text p{
+  color: #3b3b3b;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+  margin-left: 20%;
+  margin-top: 5%;
+}
+
+.form-grid div{
+  display: flex;
+  flex-direction: column;
+}
+
+.form-grid div input{
+  color: #4c4c4c;
+  background-color:#dedddd9d;
+  border-radius: 16px;
+  height: 25px;
+  width: 40%;
+  padding-left: 1%;
+}
+
+.zamestnavatel_udaje{
+  color: #f5f5f5;
+}
+
+.prilohy{
+  margin-left: 20%;
+}
+
+.rod_stav{
+  margin-left: 30%;
+}
+
+.roleta{
+  display: none;
+  position: absolute;
+  background-color: rgba(202, 202, 202, 0.750);
+  min-width: 160px;
+  z-index: 1;
+  width: 200px;
+  text-align: center;
+  border-radius: 16px;
+  margin-left: 20px;
+}
+
+.roleta a{
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  border-radius: 100px;
+}
+
+.roleta a:hover{
+  background-color: #D6D6D6;
+  color: #0056B3;
+}
+
+.roleta a:visited{
+  color: #0056B3;
+}
+
+.polozka_menu{
+  position: relative;
+  display: inline-block;
+}
+
+.polozka_menu:hover .roleta{
+  display:block;
+}
+
+.polozka_menu:hover .tlacidlo{
+  background-color: #D6D6D6;
+  color: #0056B3;
+}
