@@ -211,50 +211,63 @@
                 </div>
             </form>
         </div>
-    </div>
-        
-        <div class="prilohy">
-            <h2 style="color: black;">NAHRÁVANIE PRÍLOH</h2>
-            <form>
-                <label for="obp_strana1">
-                <img src="images/upload_oblacik.png" alt="upload_ikona" >
+    </div>      
+    <div class="prilohy">
+        <h2 style="color: black;">NAHRÁVANIE PRÍLOH</h2>
+        <form>
+            <label for="obp_strana1">
+                <img src="images/upload_oblacik.png" alt="upload_ikona">
                 Fotokópia občianskeho preukazu 1.strana
-                </label>
-                <input type="file" id="obp_strana1" name="fotokopia_obp_1strana" required>
-                <br><br>
-                <label for="obp_strana1">
-                <img src="images/upload_oblacik.png" alt="upload_ikona">    
+            </label>
+            <input type="file" id="obp_strana1" name="fotokopia_obp_1strana" required>
+            <br>
+            <span id="file-name-obp_strana1">Nie je vybratý žiadny súbor</span>
+            <br><br>  
+            
+            <label for="obp_strana1">
+                <img src="images/upload_oblacik.png" alt="upload_ikona">  
                 Fotokópia občianskeho preukazu 2.strana
-                </label>
-                <input type="file" id="obp_strana2" name="fotokopia_obp_2strana" required>
-                <br><br>
-                <label for="vypis">
+            </label>
+            <input type="file" id="obp_strana2" name="fotokopia_obp_2strana" required>
+            <br>
+            <span id="file-name-obp_strana2">Nie je vybratý žiadny súbor</span>
+            <br><br>
+
+            <label for="vypis">
                 <img src="images/upload_oblacik.png" alt="upload_ikona">
                 Výpis z účtu za posledné 3 mesiace, kam Vám chodí príjem
-                </label>
-                <input type="file" id="vypis" name="vypis_z_uctu_3mes" required>
-                <br><br>
-                <input type="file" id="vyplat_paska" name="vyplatna_paska_3mes" required>
-                <label for="vyplat_paska">
+            </label>
+            <input type="file" id="vypis" name="vypis_z_uctu_3mes" required>
+            <br>
+            <span id="file-name-vypis">Nie je vybratý žiadny súbor</span>
+            <br><br>
+
+            <label for="vyplat_paska"> 
                 <img src="images/upload_oblacik.png" alt="upload_ikona">    
                 Výplatné pásky za posledné 3 mesiace
-                </label>
-                <br><br>
-                <input type="file" id="vedlaj_prijem_priloha" name="vedlajsi_prijem_priloha" nonrequired> 
-                <label for="vedlaj_prijem_priloha">
-                <img src="images/upload_oblacik.png" alt="upload_ikona">    
+            </label>
+            <input type="file" id="vyplat_paska" name="vyplatna_paska_3mes" required> 
+            <br>
+            <span id="file-name-vyplat_paska">Nie je vybratý žiadny súbor</span>
+            <br><br>
+
+            <label for="vedlaj_prijem_priloha">
+                <img src="images/upload_oblacik.png" alt="upload_ikona">      
                 <strong>V prípade že poberáte aj vedlajší príjem, doložiť potvrdenie</strong>
-                </label>
-                <br><br>
-            </form>
-            <div class="bottom_text">
-                <img src="images/exclamation-mark.png" alt="exclamation-mark">
-                <p>
-                    (* Pre bezproblémové a rýchle vybavenie Vašej<br>
-                    žiadosti je nutné vyplniť všetky položky správne<br>
-                    a nahrať všetky potrebné prílohy.)
-                </p>
-            </div>
+            </label>
+            <input type="file" id="vedlaj_prijem_priloha" name="vedlajsi_prijem_priloha" nonrequired>
+            <br>
+            <span id="file-name-vedlaj_prijem_priloha">Nie je vybratý žiadny súbor</span>
+            <br><br>
+        </form>
+        
+        <div class="bottom_text">
+            <img src="images/exclamation-mark.png" alt="exclamation-mark">
+            <p>
+                (* Pre bezproblémové a rýchle vybavenie Vašej<br>
+                žiadosti je nutné vyplniť všetky položky správne<br>
+                a nahrať všetky potrebné prílohy.)
+            </p>
         </div>
     </div>
 
@@ -289,6 +302,7 @@
     </footer>  
 
     <script src="script.js"></script>
+    <script src="prilohy.js"></script>
 
 </body>
 </html>

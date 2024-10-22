@@ -696,8 +696,13 @@ input::-webkit-inner-spin-button {
   background-color: #00ffff;
 }
 
-.prilohy input{
+input[type="file"] {
   display: none;
+}
+
+.prilohy span{
+  display: none;
+  margin-left: 3%;
 }
 
 .prilohy label{
