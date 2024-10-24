@@ -46,15 +46,12 @@
                 <div class="roleta">
                     <a href="#">Pre Zamestnancov</a>
                     <a href="#">Pre Živnostníkov</a>
-                    <a href="#">Pre Dôchodcov</a>
                 </div>
             </div>
             <div class="polozka_menu">
                 <button id="hypotek_but" onclick="" type="button"><a><b>HYPOTÉKA</b></a></button>
                 <div class="roleta">
-                <a href="#">Pre Zamestnancov</a>
-                <a href="#">Pre Živnostníkov</a>
-                <a href="#">Pre Dôchodcov</a>
+                <a href="#">Pre Ľudí</a>
                 </div>
             </div>
         </div>
@@ -79,104 +76,102 @@
             </div>
         </div>
     </div> 
-
+    <!--*POZICKA ZAMESTNANENC*-->
     <div class="vase_udaje">
-        <div class="vase_udaje_top">
+        <form name="poz_zamestnanec" class="pozicka_zamestnanec">
             <h2 style="color:black; margin-left: 20%;" >ÚDAJE O VÁS</h2>
-            <form>
-                <div class="form-grid">
-                    <div id="ur_name">
-                        <label for="name"><strong>MENO</strong></label>
-                        <br>
-                        <input type="text" id="your_name" name="your_name">
-                        <br><br>
-                    </div>  
-                    <div id="priezvisko">
-                        <label for="priezvisko"><strong>PRIEZVISKO</strong></label>
-                        <br>
-                        <input type="text" id="surname" name="surname">
-                        <br><br>
-                    </div>
-                    <div class="rodc">
-                        <label for="rodnec"><strong>RODNÉ ČÍSLO</strong></label>
-                        <br>
-                        <input type="text" id="rodnec" name="rodne_cislo">
-                        <br><br>
-                    </div>
-                    <div class="empty">
-                        <br><br>
-                        <input type="hidden">
-                    </div>
-                    <div class="tel">
-                        <label for="tel_cislo"><strong>TELEFÓNNY KONTAKT</strong></label>
-                        <br>
-                        <input type="tel" id="tel_cislo" name="phone_number" placeholder="947-XXX-XXX" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
-                        <br><br>
-                    </div>
-                    <div class="mail">
-                        <label for="email"><strong>E-MAILOVÁ ADRESA</strong></label>
-                        <br>
-                        <input type="email" id="email" name="email">
-                        <br><br>
-                    </div>
-                    <div class="obpc">
-                        <br><br>
-                        <label for="obpcislo"><strong>ČÍSLO OBČIANSKEHO PREUKAZU</strong></label>
-                        <br>
-                        <input type="text" id="obpcislo" name="cislo_obcianskeho_preukazu">
-                        <br><br>
-                    </div>
-                    <div class="platobp">
-                        <br><br>
-                        <label for="platnostobp"><strong>PLATNOSŤ OBČIANSKEHO PREUKAZU</strong></label>
-                        <br>
-                        <input type="month" id="platnost" name="platnost_obcianskeho_preukazu">
-                        <br><br>
-                    </div>
-                    <div class="ulica">
-                        <label for="adresa" style="font-size: 18px;"><strong>ADRESA</strong></label>
-                        <br>
-                        <label for="ulica_cislo"><strong>ULICA,ČÍSLO</strong></label>
-                        <br>
-                        <input type="text" id="ulica" name="ulica_cislo">
-                        <br><br>
-                    </div>
-                    <div class="mesto">
-                        <br><br>
-                        <label for="mesto_psc"><strong>MESTO,PSČ</strong></label>
-                        <br>
-                        <input type="text" id="mesto_psc" name="mesto_psc">
-                        <br><br>
-                    </div>
+            <div class="form-grid">
+                <div id="ur_name">
+                    <label for="name"><strong>MENO</strong></label>
+                    <br>
+                    <input type="text" id="your_name" name="your_name">
+                    <br><br>
+                </div>  
+                <div id="priezvisko">
+                    <label for="priezvisko"><strong>PRIEZVISKO</strong></label>
+                    <br>
+                    <input type="text" id="surname" name="surname">
+                    <br><br>
                 </div>
-                    <div class="rod_stav">
-                        <br><br>
-                        <label for="rodin_stav"><strong>RODINNÝ STAV</strong></label>
-                        <br>
-                        <input type="radio" id="slobod" name="rodin_stav" value="slobodny_slobodna" required >
-                        <label for="slobodny_slobodna">SLOBODNÝ/SLOBODNÁ</label>
-                        <input type="radio" id="zenat" name="rodin_stav" value="zenaty_vydata" required>
-                        <label for="zenaty_vydata">ŽENATÝ/VYDATÁ</label>
-                        <input type="radio" id="vdovec" name="rodin_stav" value="vdovec_vdova" required>
-                        <label for="vdovec_vdova">VDOVEC/VDOVA</label>
-                    </div>
-                <div class="form-grid">
-                    <div class="deti">
-                        <label for="pocet_deti"><strong>POČET DETÍ POD 25 ROKOV</strong></label>
-                        <br>
-                        <input type="number" id="pocet_deti" name="pocet_deti_pod_25" min="0" required>
-                        <br><br>
-                    </div>
-                    <div class="empty">
-                        <br><br>
-                        <input type="hidden">
-                    </div>  
+                <div class="rodc">
+                    <label for="rodnec"><strong>RODNÉ ČÍSLO</strong></label>
+                    <br>
+                    <input type="text" id="rodnec" name="rodne_cislo">
+                    <br><br>
                 </div>
-            </form>
-        </div>
+                <div class="empty">
+                    <br><br>
+                    <input type="hidden">
+                </div>
+                <div class="tel">
+                    <label for="tel_cislo"><strong>TELEFÓNNY KONTAKT</strong></label>
+                    <br>
+                    <input type="tel" id="tel_cislo" name="phone_number" placeholder="947-XXX-XXX" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
+                    <br><br>
+                </div>
+                <div class="mail">
+                    <label for="email"><strong>E-MAILOVÁ ADRESA</strong></label>
+                    <br>
+                    <input type="email" id="email" name="email">
+                    <br><br>
+                </div>
+                <div class="obpc">
+                    <br><br>
+                    <label for="obpcislo"><strong>ČÍSLO OBČIANSKEHO PREUKAZU</strong></label>
+                    <br>
+                    <input type="text" id="obpcislo" name="cislo_obcianskeho_preukazu">
+                    <br><br>
+                </div>
+                <div class="platobp">
+                    <br><br>
+                    <label for="platnostobp"><strong>PLATNOSŤ OBČIANSKEHO PREUKAZU</strong></label>
+                    <br>
+                    <input type="month" id="platnost" name="platnost_obcianskeho_preukazu">
+                    <br><br>
+                </div>
+                <div class="ulica">
+                    <label for="adresa" style="font-size: 18px;"><strong>ADRESA</strong></label>
+                    <br>
+                    <label for="ulica_cislo"><strong>ULICA,ČÍSLO</strong></label>
+                    <br>
+                    <input type="text" id="ulica" name="ulica_cislo">
+                    <br><br>
+                </div>
+                <div class="mesto">
+                    <br><br>
+                    <label for="mesto_psc"><strong>MESTO,PSČ</strong></label>
+                    <br>
+                    <input type="text" id="mesto_psc" name="mesto_psc">
+                    <br><br>
+                </div>
+            </div>
+                <div class="rod_stav">
+                    <br><br>
+                    <label for="rodin_stav"><strong>RODINNÝ STAV</strong></label>
+                    <br>
+                    <input type="radio" id="slobod" name="rodin_stav" value="slobodny_slobodna" required >
+                    <label for="slobodny_slobodna">SLOBODNÝ/SLOBODNÁ</label>
+                    <input type="radio" id="zenat" name="rodin_stav" value="zenaty_vydata" required>
+                    <label for="zenaty_vydata">ŽENATÝ/VYDATÁ</label>
+                    <input type="radio" id="vdovec" name="rodin_stav" value="vdovec_vdova" required>
+                    <label for="vdovec_vdova">VDOVEC/VDOVA</label>
+                </div>
+            <div class="form-grid">
+                <div class="deti">
+                    <label for="pocet_deti"><strong>POČET DETÍ POD 25 ROKOV</strong></label>
+                    <br>
+                    <input type="number" id="pocet_deti" name="pocet_deti_pod_25" min="0" required>
+                    <br><br>
+                </div>
+                <div class="empty">
+                    <br><br>
+                    <input type="hidden">
+                </div>  
+            </div>
+        </form>
         <div class="zamestnavatel_udaje">
-            <h2 style="margin-left: 20%; padding-top: 25px;">ÚDAJE O ZAMESTNÁVATEĽOVI</h2>
-            <form>
+            <form name="poz_zamestnanec" class="pozicka_zamestnanec">
+                <h2 style="margin-left: 20%; padding-top: 25px;">ÚDAJE O ZAMESTNÁVATEĽOVI</h2>
                 <div class="form-grid">
                     <div class="zamestnavatel">
                         <label for="zamestnavatel"><strong>NÁZOV ZAMESTNÁVATEĽA</strong></label>
@@ -184,7 +179,7 @@
                         <input type="text" id="zamestnavatel" name="meno_zamestnavatela" required>
                         <br><br>
                     </div>
-                    <div class="ico_right">
+                    <div class="ico">
                         <label for="ico"><strong>IČO</strong></label>
                         <br>
                         <input type="text" id="ico" name="ico" required>
@@ -196,11 +191,19 @@
                         <input type="month" id="datum_nastupu" name="datum_nastupu_do_zamestnania" required>
                         <br><br>
                     </div>
+                    <div class="hidden">
+                        <input type="hidden">
+                        <br><br>
+                    </div>
                     <div class="mesiac_prijem">
                         <label for="mesac_prijem"><strong>ČISTÝ MESAČNÝ PRÍJEM</strong></label>
                         <br>
                         <input type="number" name="currency-field" id="mainplat" data-type="currency" placeholder="€" required>
                         <br><br>   
+                    </div>
+                    <div class="hidden">
+                        <input type="hidden">
+                        <br><br>
                     </div>
                     <div class="vedlajsi">
                         <label for="vedlajsi_prijem_text" style="font-size: 18px;"><strong>MÁTE EŠTE VEDLAJŠÍ PRÍJEM?</strong></label>
@@ -213,10 +216,177 @@
                 </div>
             </form>
         </div>
-    </div>      
+    </div> 
     <div class="prilohy">
-        <h2 style="color: black;">NAHRÁVANIE PRÍLOH</h2>
-        <form>
+        <form name="poz_zamestnanec" class="pozicka_zamestnanec">
+            <h2 style="color: black;">NAHRÁVANIE PRÍLOH</h2>
+            <label for="obp_strana1">
+                <img src="images/upload_oblacik.png" alt="upload_ikona">
+                Fotokópia občianskeho preukazu 1.strana
+            </label>
+            <input type="file" id="obp_strana1" name="fotokopia_obp_1strana" required>
+            <br>
+            <span id="file-name-obp_strana1">Nie je vybratý žiadny súbor</span>
+            <br><br>  
+            
+            <label for="obp_strana2">
+                <img src="images/upload_oblacik.png" alt="upload_ikona">  
+                Fotokópia občianskeho preukazu 2.strana
+            </label>
+            <input type="file" id="obp_strana2" name="fotokopia_obp_2strana" required>
+            <br>
+            <span id="file-name-obp_strana2">Nie je vybratý žiadny súbor</span>
+            <br><br>
+
+            <label for="vypis_z_uctu">
+                <img src="images/upload_oblacik.png" alt="upload_ikona">
+                Výpis z účtu za posledné 3 mesiace kam Vám chodí výplata
+            </label>
+            <input type="file" id="vypis_uctu" name="vypis_z_uctu_mes" required>
+            <br>
+            <span id="file-name-vypis">Nie je vybratý žiadny súbor</span>
+            <br><br>
+
+            <label for="dan_priznanie"> 
+                <img src="images/upload_oblacik.png" alt="upload_ikona">    
+                Výplatné pásky za posledné 3 mesiace
+            </label>
+            <input type="file" id="dan_priznanie" name="danove_priznanie" required> 
+            <br>
+            <span id="file-name-vypltka-paska">Nie je vybratý žiadny súbor</span>
+            <br><br>
+
+            <label for="vedlajsi_prijem_priloha">
+                <img src="images/upload_oblacik.png" alt="upload_ikona">      
+                <strong>V prípade že poberáte vedľajší príjem doložiť potvrdenie</strong>
+            </label>
+            <input type="file" id="dan_priznanie_priloha" name="potvrdenie_danoveho_priznania">
+            <br>
+            <span id="file-name-vedlajsi-prijem_priloha">Nie je vybratý žiadny súbor</span>
+            <br><br>
+        </form>
+    </div>  
+
+    <!--*POZICKA ZIVNOSTNIK*-->
+    <div class="vase_udaje">
+        <form name="poz_zivnostik" class="pozicka_zivnostnik">
+            <h2 style="color:black; margin-left: 20%;" >ÚDAJE O VÁS</h2>
+            <div class="form-grid">
+                <div id="ur_name">
+                    <label for="name"><strong>MENO</strong></label>
+                    <br>
+                    <input type="text" id="your_name" name="your_name">
+                    <br><br>
+                </div>  
+                <div id="priezvisko">
+                    <label for="priezvisko"><strong>PRIEZVISKO</strong></label>
+                    <br>
+                    <input type="text" id="surname" name="surname">
+                    <br><br>
+                </div>
+                <div class="rodc">
+                    <label for="rodnec"><strong>RODNÉ ČÍSLO</strong></label>
+                    <br>
+                    <input type="text" id="rodnec" name="rodne_cislo">
+                    <br><br>
+                </div>
+                <div class="empty">
+                    <br><br>
+                    <input type="hidden">
+                </div>
+                <div class="tel">
+                    <label for="tel_cislo"><strong>TELEFÓNNY KONTAKT</strong></label>
+                    <br>
+                    <input type="tel" id="tel_cislo" name="phone_number" placeholder="947-XXX-XXX" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
+                    <br><br>
+                </div>
+                <div class="mail">
+                    <label for="email"><strong>E-MAILOVÁ ADRESA</strong></label>
+                    <br>
+                    <input type="email" id="email" name="email">
+                    <br><br>
+                </div>
+                <div class="obpc">
+                    <br><br>
+                    <label for="obpcislo"><strong>ČÍSLO OBČIANSKEHO PREUKAZU</strong></label>
+                    <br>
+                    <input type="text" id="obpcislo" name="cislo_obcianskeho_preukazu">
+                    <br><br>
+                </div>
+                <div class="platobp">
+                    <br><br>
+                    <label for="platnostobp"><strong>PLATNOSŤ OBČIANSKEHO PREUKAZU</strong></label>
+                    <br>
+                    <input type="month" id="platnost" name="platnost_obcianskeho_preukazu">
+                    <br><br>
+                </div>
+                <div class="ulica">
+                    <label for="adresa" style="font-size: 18px;"><strong>ADRESA</strong></label>
+                    <br>
+                    <label for="ulica_cislo"><strong>ULICA,ČÍSLO</strong></label>
+                    <br>
+                    <input type="text" id="ulica" name="ulica_cislo">
+                    <br><br>
+                </div>
+                <div class="mesto">
+                    <br><br>
+                    <label for="mesto_psc"><strong>MESTO,PSČ</strong></label>
+                    <br>
+                    <input type="text" id="mesto_psc" name="mesto_psc">
+                    <br><br>
+                </div>
+            </div>
+                <div class="rod_stav">
+                    <br><br>
+                    <label for="rodin_stav"><strong>RODINNÝ STAV</strong></label>
+                    <br>
+                    <input type="radio" id="slobod" name="rodin_stav" value="slobodny_slobodna" required >
+                    <label for="slobodny_slobodna">SLOBODNÝ/SLOBODNÁ</label>
+                    <input type="radio" id="zenat" name="rodin_stav" value="zenaty_vydata" required>
+                    <label for="zenaty_vydata">ŽENATÝ/VYDATÁ</label>
+                    <input type="radio" id="vdovec" name="rodin_stav" value="vdovec_vdova" required>
+                    <label for="vdovec_vdova">VDOVEC/VDOVA</label>
+                </div>
+            <div class="form-grid">
+                <div class="deti">
+                    <label for="pocet_deti"><strong>POČET DETÍ POD 25 ROKOV</strong></label>
+                    <br>
+                    <input type="number" id="pocet_deti" name="pocet_deti_pod_25" min="0" required>
+                    <br><br>
+                </div>
+                <div class="empty">
+                    <br><br>
+                    <input type="hidden">
+                </div>  
+            </div>
+        </form>
+        <div class="firma_udaje">
+            <form name="poz_zivnostik" class="pozicka_zivnostnik">
+                <h2 style="margin-left: 20%; padding-top: 25px;">ÚDAJE O FIRME</h2>
+                <div class="form-grid">
+                    <div class="ico_firmy">
+                        <label for="ico"><strong>IČO</strong></label>
+                        <br>
+                        <input type="text" id="ico" name="ico" required>
+                        <br><br>
+                    </div>
+                    <div class="hidden">
+                        <input type="hidden">
+                        <br><br>
+                    </div>
+                    <div class="zaciatok_podnikania">
+                        <label for="zac_podnikania"><strong>Začiatok podnikania od</strong></label>
+                        <br>
+                        <input type="date" name="zaciatok_podnikania" id="zaciatok_podnikania" required>
+                        <br><br>   
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="prilohy">
+        <form name="poz_zivnostik" class="pozicka_zivnostnik">
+            <h2 style="color: black;">NAHRÁVANIE PRÍLOH</h2>
             <label for="obp_strana1">
                 <img src="images/upload_oblacik.png" alt="upload_ikona">
                 Fotokópia občianskeho preukazu 1.strana
@@ -235,42 +405,203 @@
             <span id="file-name-obp_strana2">Nie je vybratý žiadny súbor</span>
             <br><br>
 
-            <label for="vypis">
+            <label for="vypis_firem_uctu">
                 <img src="images/upload_oblacik.png" alt="upload_ikona">
-                Výpis z účtu za posledné 3 mesiace, kam Vám chodí príjem
+                Výpis z firemného účtu za posledné 3 mesiace
             </label>
-            <input type="file" id="vypis" name="vypis_z_uctu_3mes" required>
+            <input type="file" id="vypis_firmy" name="vypis_z_uctu_firmy" required>
             <br>
             <span id="file-name-vypis">Nie je vybratý žiadny súbor</span>
             <br><br>
 
-            <label for="vyplat_paska"> 
+            <label for="dan_priznanie"> 
                 <img src="images/upload_oblacik.png" alt="upload_ikona">    
-                Výplatné pásky za posledné 3 mesiace
+                Daňové priznanie
             </label>
-            <input type="file" id="vyplat_paska" name="vyplatna_paska_3mes" required> 
+            <input type="file" id="dan_priznanie" name="danove_priznanie" required> 
             <br>
-            <span id="file-name-vyplat_paska">Nie je vybratý žiadny súbor</span>
+            <span id="file-name-dan-priznanie">Nie je vybratý žiadny súbor</span>
             <br><br>
 
-            <label for="vedlaj_prijem_priloha">
+            <label for="danove_priznanie">
                 <img src="images/upload_oblacik.png" alt="upload_ikona">      
-                <strong>V prípade že poberáte aj vedlajší príjem, doložiť potvrdenie</strong>
+                Potvrdenie o podaní daňového priznania
             </label>
-            <input type="file" id="vedlaj_prijem_priloha" name="vedlajsi_prijem_priloha" nonrequired>
+            <input type="file" id="dan_priznanie_priloha" name="potvrdenie_danoveho_priznania">
             <br>
-            <span id="file-name-vedlaj_prijem_priloha">Nie je vybratý žiadny súbor</span>
+            <span id="file-name-danove_priznanie_priloha">Nie je vybratý žiadny súbor</span>
             <br><br>
         </form>
-        
-        <div class="bottom_text">
-            <img src="images/exclamation-mark.png" alt="exclamation-mark">
-            <p>
-                (* Pre bezproblémové a rýchle vybavenie Vašej<br>
-                žiadosti je nutné vyplniť všetky položky správne<br>
-                a nahrať všetky potrebné prílohy.)
-            </p>
-        </div>
+    </div>
+
+    <!--*POZICKA DOCHODCI*-->
+    <div class="vase_udaje">
+        <form name="poz_dochodca" class="pozicka_dochodca">
+            <h2 style="color:black; margin-left: 20%;" >ÚDAJE O VÁS</h2>
+            <div class="form-grid">
+                <div id="ur_name">
+                    <label for="name"><strong>MENO</strong></label>
+                    <br>
+                    <input type="text" id="your_name" name="your_name">
+                    <br><br>
+                </div>  
+                <div id="priezvisko">
+                    <label for="priezvisko"><strong>PRIEZVISKO</strong></label>
+                    <br>
+                    <input type="text" id="surname" name="surname">
+                    <br><br>
+                </div>
+                <div class="rodc">
+                    <label for="rodnec"><strong>RODNÉ ČÍSLO</strong></label>
+                    <br>
+                    <input type="text" id="rodnec" name="rodne_cislo">
+                    <br><br>
+                </div>
+                <div class="empty">
+                    <br><br>
+                    <input type="hidden">
+                </div>
+                <div class="tel">
+                    <label for="tel_cislo"><strong>TELEFÓNNY KONTAKT</strong></label>
+                    <br>
+                    <input type="tel" id="tel_cislo" name="phone_number" placeholder="947-XXX-XXX" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
+                    <br><br>
+                </div>
+                <div class="mail">
+                    <label for="email"><strong>E-MAILOVÁ ADRESA</strong></label>
+                    <br>
+                    <input type="email" id="email" name="email">
+                    <br><br>
+                </div>
+                <div class="obpc">
+                    <br><br>
+                    <label for="obpcislo"><strong>ČÍSLO OBČIANSKEHO PREUKAZU</strong></label>
+                    <br>
+                    <input type="text" id="obpcislo" name="cislo_obcianskeho_preukazu">
+                    <br><br>
+                </div>
+                <div class="platobp">
+                    <br><br>
+                    <label for="platnostobp"><strong>PLATNOSŤ OBČIANSKEHO PREUKAZU</strong></label>
+                    <br>
+                    <input type="month" id="platnost" name="platnost_obcianskeho_preukazu">
+                    <br><br>
+                </div>
+                <div class="ulica">
+                    <label for="adresa" style="font-size: 18px;"><strong>ADRESA</strong></label>
+                    <br>
+                    <label for="ulica_cislo"><strong>ULICA,ČÍSLO</strong></label>
+                    <br>
+                    <input type="text" id="ulica" name="ulica_cislo">
+                    <br><br>
+                </div>
+                <div class="mesto">
+                    <br><br>
+                    <label for="mesto_psc"><strong>MESTO,PSČ</strong></label>
+                    <br>
+                    <input type="text" id="mesto_psc" name="mesto_psc">
+                    <br><br>
+                </div>
+            </div>
+                <div class="rod_stav">
+                    <br><br>
+                    <label for="rodin_stav"><strong>RODINNÝ STAV</strong></label>
+                    <br>
+                    <input type="radio" id="slobod" name="rodin_stav" value="slobodny_slobodna" required >
+                    <label for="slobodny_slobodna">SLOBODNÝ/SLOBODNÁ</label>
+                    <input type="radio" id="zenat" name="rodin_stav" value="zenaty_vydata" required>
+                    <label for="zenaty_vydata">ŽENATÝ/VYDATÁ</label>
+                    <input type="radio" id="vdovec" name="rodin_stav" value="vdovec_vdova" required>
+                    <label for="vdovec_vdova">VDOVEC/VDOVA</label>
+                </div>
+            <div class="form-grid">
+                <div class="deti">
+                    <label for="pocet_deti"><strong>POČET DETÍ POD 25 ROKOV</strong></label>
+                    <br>
+                    <input type="number" id="pocet_deti" name="pocet_deti_pod_25" min="0" required>
+                    <br><br>
+                </div>
+                <div class="empty">
+                    <br><br>
+                    <input type="hidden">
+                </div>  
+                <div class="vyska_dochodku">
+                    <br><br>
+                    <label for="vyska_dochodok"><strong>VÝŠKA DÔCHODKU</strong></label>
+                    <br>
+                    <input type="number" name="dochodok-vyska" id="vysdoch" data-type="currency" placeholder="€" nonrequired >
+                    <br><br>
+                </div>
+                <div class="vedlajsi">
+                    <label for="vedlajsi_prijem_text" style="font-size: 18px;"><strong>MÁTE EŠTE VEDLAJŠÍ PRÍJEM?</strong></label>
+                    <br>
+                    <label for="vedlaj_prijem"><strong>VÝŠKA VEDLAJŠIEHO PRÍJMU</strong></label>
+                    <br>
+                    <input type="number" name="currency-field" id="vedplat" data-type="currency" placeholder="€" nonrequired >
+                    <br><br>
+                </div>
+                
+            </div>
+        </form>
+
+    </div> 
+    <div class="prilohy">
+        <form name="poz_dochodca" class="pozicka_dochodca">
+            <h2 style="color: black;">NAHRÁVANIE PRÍLOH</h2>
+            <label for="obp_strana1">
+                <img src="images/upload_oblacik.png" alt="upload_ikona">
+                Fotokópia občianskeho preukazu 1.strana
+            </label>
+            <input type="file" id="obp_strana1" name="fotokopia_obp_1strana" required>
+            <br>
+            <span id="file-name-obp_strana1">Nie je vybratý žiadny súbor</span>
+            <br><br>  
+            
+            <label for="obp_strana2">
+                <img src="images/upload_oblacik.png" alt="upload_ikona">  
+                Fotokópia občianskeho preukazu 2.strana
+            </label>
+            <input type="file" id="obp_strana2" name="fotokopia_obp_2strana" required>
+            <br>
+            <span id="file-name-obp_strana2">Nie je vybratý žiadny súbor</span>
+            <br><br>
+
+            <label for="vypis_dochodku_z_uctu">
+                <img src="images/upload_oblacik.png" alt="upload_ikona">
+                Výpis z účtu kde poberáte dôchodok
+            </label>
+            <input type="file" id="vypis_dochodku_z_uctu" name="vypis_z_dochodkoveho_uctu" required>
+            <br>
+            <span id="file-name-vypis">Nie je vybratý žiadny súbor</span>
+            <br><br>
+
+            <label for="dochodok_priznanie"> 
+                <img src="images/upload_oblacik.png" alt="upload_ikona">    
+                Rozhodnutie o poberaní dôchodku
+            </label>
+            <input type="file" id="dochodok_priznanie" name="dochodkove_priznanie" required> 
+            <br>
+            <span id="file-name-dochodok-priznanie">Nie je vybratý žiadny súbor</span>
+            <br><br>
+
+            <label for="vedlajsi_prijem_priloha">
+                <img src="images/upload_oblacik.png" alt="upload_ikona">      
+                <strong>V prípade že poberáte vedľajší príjem doložiť potvrdenie</strong>
+            </label>
+            <input type="file" id="dochodok_priznanie_priloha" name="vedlajsi_prijem_dochodca">
+            <br>
+            <span id="file-name-vedlajsi-prijem-dochodca-priloha">Nie je vybratý žiadny súbor</span>
+            <br><br>
+        </form>
+    </div>
+
+    <div class="bottom_text">
+        <img src="images/exclamation-mark.png" alt="exclamation-mark">
+        <p>
+            (* Pre bezproblémové a rýchle vybavenie Vašej<br>
+            žiadosti je nutné vyplniť všetky položky správne<br>
+            a nahrať všetky potrebné prílohy.)
+        </p>
     </div>
 
     <button id="button-demand" onclick="location.href=''" type="button"><a><strong>ODOSLAŤ ŽIADOSŤ</strong></a></button>

@@ -659,7 +659,7 @@ input::-webkit-inner-spin-button {
 }
 
 .zamestnavatel_udaje{
-  height: 500px;
+  height: auto;
   width: auto;
   background-image: url(images/KONTAKT.png);
   background-color: #597cff;
@@ -887,4 +887,21 @@ input[type="file"] {
 .polozka_menu:hover .tlacidlo{
   background-color: #D6D6D6;
   color: #0056B3;
+}
+
+.bottom_text{
+  margin-left: 16%;
+}
+
+.pozicka_zamestnanec{
+  display: none;
+}
+
+
+.pozicka_zivnostnik{
+  display:none ;
+}
+
+.pozicka_dochodca{
+  display: none;
 }
