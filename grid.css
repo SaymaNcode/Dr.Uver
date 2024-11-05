@@ -237,9 +237,9 @@ h1,h2,h3,h4,h5{
 
 #produkt_row1{
   background-image: url(images/nasa_misia.png);
-  background-size: 150%;
+  background-size: 110%;
   background-position: center;
-  height: 525px;
+  height: 600px;
 }
 
 #uver-right{
@@ -899,9 +899,9 @@ input[type="file"] {
 
 
 .pozicka_zivnostnik{
-  display:none ;
+  display:none;
 }
 
 .pozicka_dochodca{
-  display: none;
+  display: block;
 }

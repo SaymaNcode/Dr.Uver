@@ -40,14 +40,18 @@
         
         <div class="kontakt_grid">
             <h2 style="color: #f6f6f6;">NAPÍŠTE NÁM</h2>
-            <form action="email.php" method="_POST">
+            <form action="" method="_POST">
                 <label for="name" style="color:white;">MENO</label>
                 <br>
                 <input type="text" id="name" name="meno"style="height:20px;width:300px;" required>
                 <br><br>
+                <label for="email" style="color:white;">E-MAIL</label>
+                <br>
+                <input type="email" id="mail" name="mail"style="height:20px;width:300px;" required>
+                <br><br>
                 <label for="subject"style="color:white;">SPRÁVA</label>
                 <br>
-                <textarea id="subject" name="subject" style="height:180px;width:300px;" required></textarea>
+                <textarea id="subject" name="subject" style="height:160px;width:300px;" required></textarea>
                 <br><br>
                 <button id="button_odoslat" type="submit"><a><b>ODOSLAŤ</b></a></button>
             </form>
