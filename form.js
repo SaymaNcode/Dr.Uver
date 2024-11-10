@@ -1,13 +1,23 @@
-function form_function() {
-document.getElementById('zamestnanec_pozicka_button').addEventListener('click', function () {
-    // Hide Form 2 and show Form 1
-    document.getElementsByClassName('poz_zivnostnik').style.display = 'none';
-    document.getElementsByClassName('poz_zamestnanec').style.display = 'block';
-});
+document.addEventListener('DOMContentLoaded', function() {
+    function showForm(formClass) {
+        const forms = ['pozicka_zamestnanec', 'pozicka_zivnostnik', 'pozicka_dochodca'];
+        forms.forEach(function(className) {
+            const elements = document.getElementsByClassName(className);
+            for (let i = 0; i < elements.length; i++) {
+                elements[i].style.display = (className === formClass) ? 'block' : 'none';
+            }
+        });
+    }
 
-document.getElementById('zivnostnik_pozicka_button').addEventListener('click', function () {
-    // Hide Form 1 and show Form 2
-    document.getElementsByClassName('poz_zamestnanec').style.display = 'none';
-    document.getElementsByClassName('poz_zivnostnik').style.display = 'block';
+    document.getElementById('zamestnanec_pozicka_button').addEventListener('click', function () {
+        showForm('pozicka_zamestnanec');
+    });
+
+    document.getElementById('zivnostnik_pozicka_button').addEventListener('click', function () {
+        showForm('pozicka_zivnostnik');
+    });
+
+    document.getElementById('dochodca_pozicka_button').addEventListener('click', function () {
+        showForm('pozicka_dochodca');
+    });
 });
-} 
