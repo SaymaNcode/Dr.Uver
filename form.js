@@ -14,11 +14,3 @@ document.addEventListener('DOMContentLoaded', function() {
         showForm('pozicka_dochodca');
     });
 });
-    document.getElementById('zivnostnik_pozicka_button').addEventListener('click', function () {
-        showForm('pozicka_zivnostnik');
-    });
-
-    document.getElementById('dochodca_pozicka_button').addEventListener('click', function () {
-        showForm('pozicka_dochodca');
-    });
-});
