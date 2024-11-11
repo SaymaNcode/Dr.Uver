@@ -62,6 +62,7 @@ p{
 
 #history{
   grid-area: historia;
+  color: black;
 }
 
 nav img{
@@ -130,6 +131,7 @@ footer {
   grid-template-areas: 
   ' empty skratka navig empty2 ';
   margin-top: 1%;
+  text-align: justify;
 }
 
 .footer_grid {
@@ -151,42 +153,51 @@ footer {
 }
 
 .fa {
-    padding: 2.5%;
-    font-size: 70px;
-    width: 2%;
-    text-align: center;
-    text-decoration: none;
-    margin: 0px 3%;
-    color:white;
-    
-  }
+  padding: 2.5%;
+  font-size: 70px;
+  width: 2%;
+  text-align: center;
+  text-decoration: none;
+  margin: 0px 3%;
+  color:white;
+}
 .fa-facebook {
-    transition: 0.7s ease-out;
-    font-size: 35px;
-  }
+  transition: 0.7s ease-out;
+  font-size: 35px;
+}
 
 .fa-facebook:hover {
-    color: #0056b3;
-    transition: 0.7s ease-out;
-  }
+  color: #0056b3;
+  transition: 0.7s ease-out;
+}
 
 .fa-instagram{
-    transition: 0.7s ease-out;
-    font-size: 35px;
+  transition: 0.7s ease-out;
+  font-size: 35px;
 }
 
 .fa-instagram:hover {
-    color: #0056b3;
-    transition: 0.7s ease-out;
-  }
+  color: #0056b3;
+  transition: 0.7s ease-out;
+}
+
+#copyright p{
+  font-size: 14px;
+}
 
 .kontakt_grid{
-    margin: 0 2%;
-    width: 480px;
-    height: 420px;
-    background-color: transparent;
-    padding: 2%;
-    text-align: left;
+  margin: 0 2%;
+  width: 480px;
+  height: 420px;
+  background-color: transparent;
+  padding: 2%;
+  text-align: left;
+}
+
+.kontakt_grid p{
+  margin-left: 12.5%;
+  margin-top:-8%;
+  color: white;
 }
 
 #kontakt{
@@ -318,7 +329,23 @@ h1,h2,h3,h4,h5{
   grid-column-gap: 20px;
   grid-template-areas:
   'empty pro fast effi online empty2';
-  
+}
+
+.four h2{
+  align-self:center;
+  color: #597CFF;
+}
+
+.four p{
+  color: black;
+}
+
+#vyhody h2{
+  color:#597CFF;
+}
+
+#vyhody p{
+  color:black;
 }
 
 #pro{
@@ -334,16 +361,28 @@ h1,h2,h3,h4,h5{
   width: 75%;    
 }
 
+#fast h2{
+  margin-left: 20%;
+}
+
 #effi{
   grid-area: effi;
   height: 100%;
   width: 75%;    
 }
 
+#effi h2{
+  margin-left: 10%;
+}
+
 #online{ 
   grid-area: online;
   height: 100%;
   width: 75%;     
+}
+
+#online h2{
+  margin-left: 25%;
 }
 
 .vyhpod{
@@ -429,25 +468,35 @@ button:disabled {
   width:auto;
 }
 
+#main h1{
+  text-align: center; 
+  font-size:50px;
+}
+
 #button1{ 
   top: 50%;
   left: 30%;
+  margin-right: 5%; 
+  align-self:center; 
+  font-size: medium;
 }
 
 #button2{
-
   top: 50%;
   left:50%;
+  align-self:center;
 }
 
 #main_button{
-  width: 35%;
+  width: 50%;
   height: 40%;
   margin-left: 32.5%;
 }
 
 #podmienky_img{
   grid-area: obraz;
+  margin-left:15%;
+  margin-top: -15%;
 }
 
 #podmienky_button{
@@ -537,12 +586,15 @@ textarea{
 #FAQ h1{
   grid-area: text;
   align-content: center;
+  font-size: 75px; 
+  margin-left: 2.5%;
 }
 
 #FAQ h4{
   grid-area: text;
   align-content: center;
   margin-top: 25%;
+  margin-left: 2.5%;
 }
 
 .FAQ_grid{
@@ -903,4 +955,14 @@ input[type="file"] {
 
 .pozicka_dochodca{
   display: none;
+}
+
+.firma_udaje{
+  height: auto;
+  width: auto;
+  background-image: url(images/KONTAKT.png);
+  background-color: #597cff;
+  background-size: cover;
+  background-position: center;
+  color: #f5f5f5;
 }

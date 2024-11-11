@@ -76,8 +76,9 @@
         </div>
     </div> 
     <!--*POZICKA ZAMESTNANENC*-->
-    <div class="vase_udaje">
-        <form name="poz_zamestnanec" class="pozicka_zamestnanec">
+    <div class="pozicka_zamestnanec">
+        <div class="vase_udaje">
+        <form name="poz_zamestnanec">
             <h2 style="color:black; margin-left: 20%;" >ÚDAJE O VÁS</h2>
             <div class="form-grid">
                 <div id="ur_name">
@@ -169,7 +170,7 @@
             </div>
         </form>
         <div class="zamestnavatel_udaje">
-            <form name="poz_zamestnanec" class="pozicka_zamestnanec">
+            <form name="poz_zamestnanec">
                 <h2 style="margin-left: 20%; padding-top: 25px;">ÚDAJE O ZAMESTNÁVATEĽOVI</h2>
                 <div class="form-grid">
                     <div class="zamestnavatel">
@@ -215,9 +216,9 @@
                 </div>
             </form>
         </div>
-    </div> 
-    <div class="prilohy">
-        <form name="poz_zamestnanec" class="pozicka_zamestnanec">
+        </div> 
+        <div class="prilohy">
+        <form name="poz_zamestnanec">
             <h2 style="color: black;">NAHRÁVANIE PRÍLOH</h2>
             <label for="obp_strana1">
                 <img src="images/upload_oblacik.png" alt="upload_ikona">
@@ -259,16 +260,18 @@
                 <img src="images/upload_oblacik.png" alt="upload_ikona">      
                 <strong>V prípade že poberáte vedľajší príjem doložiť potvrdenie</strong>
             </label>
-            <input type="file" id="dan_priznanie_priloha" name="potvrdenie_danoveho_priznania">
+            <input type="file" id="dan_priznanie_priloha" name="potvrdenie_danoveho_priznania_zamestnanec">
             <br>
             <span id="file-name-vedlajsi-prijem_priloha">Nie je vybratý žiadny súbor</span>
             <br><br>
         </form>
-    </div>  
+        </div> 
+    </div>
 
     <!--*POZICKA ZIVNOSTNIK*-->
-    <div class="vase_udaje">
-        <form name="poz_zivnostik" class="pozicka_zivnostnik">
+    <div class="pozicka_zivnostnik">
+        <div class="vase_udaje">
+        <form name="poz_zivnostik">
             <h2 style="color:black; margin-left: 20%;" >ÚDAJE O VÁS</h2>
             <div class="form-grid">
                 <div id="ur_name">
@@ -360,8 +363,8 @@
             </div>
         </form>
         <div class="firma_udaje">
-            <form name="poz_zivnostik" class="pozicka_zivnostnik">
-                <h2 style="margin-left: 20%; padding-top: 25px;">ÚDAJE O FIRME</h2>
+            <form name="poz_zivnostik">
+                <h2 style="margin-left: 20%; padding-top: 2%;">ÚDAJE O FIRME</h2>
                 <div class="form-grid">
                     <div class="ico_firmy">
                         <label for="ico"><strong>IČO</strong></label>
@@ -382,9 +385,9 @@
                 </div>
             </form>
         </div>
-    </div>
-    <div class="prilohy">
-        <form name="poz_zivnostik" class="pozicka_zivnostnik">
+        </div>
+        <div class="prilohy">
+        <form name="poz_zivnostik">
             <h2 style="color: black;">NAHRÁVANIE PRÍLOH</h2>
             <label for="obp_strana1">
                 <img src="images/upload_oblacik.png" alt="upload_ikona">
@@ -431,11 +434,13 @@
             <span id="file-name-danove_priznanie_priloha">Nie je vybratý žiadny súbor</span>
             <br><br>
         </form>
+        </div>
     </div>
 
     <!--*POZICKA DOCHODCI*-->
-    <div class="vase_udaje">
-        <form name="poz_dochodca" class="pozicka_dochodca">
+    <div class="pozicka_dochodca">    
+        <div class="vase_udaje">
+            <form name="poz_dochodca">
             <h2 style="color:black; margin-left: 20%;" >ÚDAJE O VÁS</h2>
             <div class="form-grid">
                 <div id="ur_name">
@@ -541,11 +546,10 @@
                 </div>
                 
             </div>
-        </form>
-
-    </div> 
-    <div class="prilohy">
-        <form name="poz_dochodca" class="pozicka_dochodca">
+            </form>
+        </div> 
+        <div class="prilohy">
+        <form name="poz_dochodca">
             <h2 style="color: black;">NAHRÁVANIE PRÍLOH</h2>
             <label for="obp_strana1">
                 <img src="images/upload_oblacik.png" alt="upload_ikona">
@@ -592,6 +596,7 @@
             <span id="file-name-vedlajsi-prijem-dochodca-priloha">Nie je vybratý žiadny súbor</span>
             <br><br>
         </form>
+        </div>
     </div>
 
     <div class="bottom_text">
@@ -629,7 +634,7 @@
             <br><br>      
         </div>
         <div id="copyright">
-            <p style="font-size: 14px;"><b>Copyright © 2024 Dr. Úver Prievidza</b></p>
+            <p><b>Copyright © 2024 Dr. Úver Prievidza</b></p>
         </div>	
     </footer>  
 </body>
