@@ -599,6 +599,508 @@
         </div>
     </div>
 
+    <!--*LEASING ZAMESTNANEC*-->
+    <div class="leasing_zamestnanec">
+        <div class="vase_udaje">
+            <form name="leas_zamestnanec">
+                <h2 style="color:black; margin-left: 20%;" >ÚDAJE O VÁS</h2>
+                <div class="form-grid">
+                    <div id="ur_name">
+                        <label for="name"><strong>MENO</strong></label>
+                        <br>
+                        <input type="text" id="your_name" name="your_name">
+                        <br><br>
+                    </div>  
+                    <div id="priezvisko">
+                        <label for="priezvisko"><strong>PRIEZVISKO</strong></label>
+                        <br>
+                        <input type="text" id="surname" name="surname">
+                        <br><br>
+                    </div>
+                    <div class="rodc">
+                        <label for="rodnec"><strong>RODNÉ ČÍSLO</strong></label>
+                        <br>
+                        <input type="text" id="rodnec" name="rodne_cislo">
+                        <br><br>
+                    </div>
+                    <div class="empty">
+                        <br><br>
+                        <input type="hidden">
+                    </div>
+                    <div class="tel">
+                        <label for="tel_cislo"><strong>TELEFÓNNY KONTAKT</strong></label>
+                        <br>
+                        <input type="tel" id="tel_cislo" name="phone_number" placeholder="947-XXX-XXX" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
+                        <br><br>
+                    </div>
+                    <div class="mail">
+                        <label for="email"><strong>E-MAILOVÁ ADRESA</strong></label>
+                        <br>
+                        <input type="email" id="email" name="email">
+                        <br><br>
+                    </div>
+                    <div class="obpc">
+                        <br><br>
+                        <label for="obpcislo"><strong>ČÍSLO OBČIANSKEHO PREUKAZU</strong></label>
+                        <br>
+                        <input type="text" id="obpcislo" name="cislo_obcianskeho_preukazu">
+                        <br><br>
+                    </div>
+                    <div class="platobp">
+                        <br><br>
+                        <label for="platnostobp"><strong>PLATNOSŤ OBČIANSKEHO PREUKAZU</strong></label>
+                        <br>
+                        <input type="month" id="platnost" name="platnost_obcianskeho_preukazu">
+                        <br><br>
+                    </div>
+                    <div class="ulica">
+                        <label for="adresa" style="font-size: 18px;"><strong>ADRESA</strong></label>
+                        <br>
+                        <label for="ulica_cislo"><strong>ULICA,ČÍSLO</strong></label>
+                        <br>
+                        <input type="text" id="ulica" name="ulica_cislo">
+                        <br><br>
+                    </div>
+                    <div class="mesto">
+                        <br><br>
+                        <label for="mesto_psc"><strong>MESTO,PSČ</strong></label>
+                        <br>
+                        <input type="text" id="mesto_psc" name="mesto_psc">
+                        <br><br>
+                    </div>
+                </div>
+                    <div class="rod_stav">
+                        <br><br>
+                        <label for="rodin_stav"><strong>RODINNÝ STAV</strong></label>
+                        <br>
+                        <input type="radio" id="slobod" name="rodin_stav" value="slobodny_slobodna" required >
+                        <label for="slobodny_slobodna">SLOBODNÝ/SLOBODNÁ</label>
+                        <input type="radio" id="zenat" name="rodin_stav" value="zenaty_vydata" required>
+                        <label for="zenaty_vydata">ŽENATÝ/VYDATÁ</label>
+                        <input type="radio" id="vdovec" name="rodin_stav" value="vdovec_vdova" required>
+                        <label for="vdovec_vdova">VDOVEC/VDOVA</label>
+                    </div>
+                <div class="form-grid">
+                    <div class="deti">
+                        <label for="pocet_deti"><strong>POČET DETÍ POD 25 ROKOV</strong></label>
+                        <br>
+                        <input type="number" id="pocet_deti" name="pocet_deti_pod_25" min="0" required>
+                        <br><br>
+                    </div>
+                    <div class="empty">
+                        <br><br>
+                        <input type="hidden">
+                    </div>  
+                </div>
+            </form>
+            <div class="zamestnavatel_udaje">
+                <form name="leas_zamestnanec">
+                    <h2 style="margin-left: 20%; padding-top: 25px;">ÚDAJE O ZAMESTNÁVATEĽOVI</h2>
+                    <div class="form-grid">
+                        <div class="zamestnavatel">
+                            <label for="zamestnavatel"><strong>NÁZOV ZAMESTNÁVATEĽA</strong></label>
+                            <br>
+                            <input type="text" id="zamestnavatel" name="meno_zamestnavatela" required>
+                            <br><br>
+                        </div>
+                        <div class="ico">
+                            <label for="ico"><strong>IČO</strong></label>
+                            <br>
+                            <input type="text" id="ico" name="ico" required>
+                            <br><br>
+                        </div>
+                        <div class="datum">
+                            <label for="datum_nastupu"><strong>DÁTUM NASTÚPU DO ZAMESTNANIA</strong></label>
+                            <br>
+                            <input type="month" id="datum_nastupu" name="datum_nastupu_do_zamestnania" required>
+                            <br><br>
+                        </div>
+                        <div class="hidden">
+                            <input type="hidden">
+                            <br><br>
+                        </div>
+                        <div class="mesiac_prijem">
+                            <label for="mesac_prijem"><strong>ČISTÝ MESAČNÝ PRÍJEM</strong></label>
+                            <br>
+                            <input type="number" name="currency-field" id="mainplat" data-type="currency" placeholder="€" required>
+                            <br><br>   
+                        </div>
+                        <div class="hidden">
+                            <input type="hidden">
+                            <br><br>
+                        </div>
+                        <div class="vedlajsi">
+                            <label for="vedlajsi_prijem_text" style="font-size: 18px;"><strong>MÁTE EŠTE VEDLAJŠÍ PRÍJEM?</strong></label>
+                            <br>
+                            <label for="vedlaj_prijem"><strong>VÝŠKA VEDLAJŠIEHO PRÍJMU</strong></label>
+                            <br>
+                            <input type="number" name="currency-field" id="vedplat" data-type="currency" placeholder="€" nonrequired >
+                            <br><br>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="vozidlo_udaje">
+                <form name="leas_zamestnanec">
+                    <h2 style="color:black; margin-left: 20%;" >ÚDAJE O VOZIDLE</h2>
+                    <div class="form-grid">
+                        <div class="vin_cislo">
+                            <label for="vin"><strong>VIN Číslo</strong></label>
+                            <br>
+                            <input type="text" id="vin_cis" name="vin_cislo">
+                            <br><br>
+                        </div>
+                        <div class="spz">
+                            <label for="spz"><strong>ŠPZ</strong></label>
+                            <br>
+                            <input type="text" id="SPZ" name="spz_vozidla">
+                            <br><br>
+                        </div>
+                        <div class="pocet_km">
+                            <label for="km"><strong>Počet KM</strong></label>
+                            <br>
+                            <input type="number" id="pocet_kilometrov" name="pocet-km">
+                            <br><br>
+                        </div>
+                        <div class="akont">
+                            <label for="akontacia"><strong>Akontácia (min. 10% z ceny vozidla)</strong></label>
+                            <br>
+                            <input type="number" id="akontacia_input" name="akont_inout">
+                            <br><br>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div> 
+        <div class="prilohy">
+            <form name="poz_zamestnanec">
+                <h2 style="color: black;">NAHRÁVANIE PRÍLOH</h2>
+                <label for="obp_strana1">
+                    <img src="images/upload_oblacik.png" alt="upload_ikona">
+                    Fotokópia občianskeho preukazu 1.strana
+                </label>
+                <input type="file" id="obp_strana1" name="fotokopia_obp_1strana" required>
+                <br>
+                <span id="file-name-obp_strana1">Nie je vybratý žiadny súbor</span>
+                <br><br>  
+                
+                <label for="obp_strana2">
+                    <img src="images/upload_oblacik.png" alt="upload_ikona">  
+                    Fotokópia občianskeho preukazu 2.strana
+                </label>
+                <input type="file" id="obp_strana2" name="fotokopia_obp_2strana" required>
+                <br>
+                <span id="file-name-obp_strana2">Nie je vybratý žiadny súbor</span>
+                <br><br>
+    
+                <label for="vypis_z_uctu">
+                    <img src="images/upload_oblacik.png" alt="upload_ikona">
+                    Výpis z účtu za posledné 3 mesiace kam Vám chodí výplata
+                </label>
+                <input type="file" id="vypis_uctu" name="vypis_z_uctu_mes" required>
+                <br>
+                <span id="file-name-vypis">Nie je vybratý žiadny súbor</span>
+                <br><br>
+    
+                <label for="dan_priznanie"> 
+                    <img src="images/upload_oblacik.png" alt="upload_ikona">    
+                    Výplatné pásky za posledné 3 mesiace
+                </label>
+                <input type="file" id="dan_priznanie" name="danove_priznanie" required> 
+                <br>
+                <span id="file-name-vypltka-paska">Nie je vybratý žiadny súbor</span>
+                <br><br>
+    
+                <label for="vedlajsi_prijem_priloha">
+                    <img src="images/upload_oblacik.png" alt="upload_ikona">      
+                    V prípade že poberáte vedľajší príjem doložiť potvrdenie
+                </label>
+                <input type="file" id="dan_priznanie_priloha" name="potvrdenie_danoveho_priznania_zamestnanec">
+                <br>
+                <span id="file-name-vedlajsi-prijem_priloha">Nie je vybratý žiadny súbor</span>
+                <br><br>
+
+                <label for="velky_technicky_preukaz_strana1">
+                    <img src="images/upload_oblacik.png" alt="upload_ikona">
+                    <strong>Fotokópia veľkého technického preukazu vozidla 1.strana</strong>
+                </label>
+                <input type="file" id="velky_technicky_preukaz" name="fotokopia_velkeho_technik_preukazu_strana1">
+                <br>
+                <span id="file-name-velky-technik-priloha-strana1">Nie je vybratý žiadny súbor</span>
+                <br><br>
+
+                <label for="velky_technicky_preukaz_strana2">
+                    <img src="images/upload_oblacik.png" alt="upload_ikona">
+                    <strong>Fotokópia veľkého technického preukazu vozidla 2.strana</strong>
+                </label>
+                <input type="file" id="velky_technicky_preukaz" name="fotokopia_velkeho_technik_preukazu_strana2">
+                <br>
+                <span id="file-name-velky-technik-priloha-strana2">Nie je vybratý žiadny súbor</span>
+                <br><br>
+            </form>
+        </div> 
+    </div>
+
+    <!--*LEASING ZIVNOSTNIK*-->
+    <div class="leasing_zivnostnik">
+        <div class="vase_udaje">
+            <form name="leas_zivnostik">
+                <h2 style="color:black; margin-left: 20%;" >ÚDAJE O VÁS</h2>
+                <div class="form-grid">
+                    <div id="ur_name">
+                        <label for="name"><strong>MENO</strong></label>
+                        <br>
+                        <input type="text" id="your_name" name="your_name">
+                        <br><br>
+                    </div>  
+                    <div id="priezvisko">
+                        <label for="priezvisko"><strong>PRIEZVISKO</strong></label>
+                        <br>
+                        <input type="text" id="surname" name="surname">
+                        <br><br>
+                    </div>
+                    <div class="rodc">
+                        <label for="rodnec"><strong>RODNÉ ČÍSLO</strong></label>
+                        <br>
+                        <input type="text" id="rodnec" name="rodne_cislo">
+                        <br><br>
+                    </div>
+                    <div class="empty">
+                        <br><br>
+                        <input type="hidden">
+                    </div>
+                    <div class="tel">
+                        <label for="tel_cislo"><strong>TELEFÓNNY KONTAKT</strong></label>
+                        <br>
+                        <input type="tel" id="tel_cislo" name="phone_number" placeholder="947-XXX-XXX" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
+                        <br><br>
+                    </div>
+                    <div class="mail">
+                        <label for="email"><strong>E-MAILOVÁ ADRESA</strong></label>
+                        <br>
+                        <input type="email" id="email" name="email">
+                        <br><br>
+                    </div>
+                    <div class="obpc">
+                        <br><br>
+                        <label for="obpcislo"><strong>ČÍSLO OBČIANSKEHO PREUKAZU</strong></label>
+                        <br>
+                        <input type="text" id="obpcislo" name="cislo_obcianskeho_preukazu">
+                        <br><br>
+                    </div>
+                    <div class="platobp">
+                        <br><br>
+                        <label for="platnostobp"><strong>PLATNOSŤ OBČIANSKEHO PREUKAZU</strong></label>
+                        <br>
+                        <input type="month" id="platnost" name="platnost_obcianskeho_preukazu">
+                        <br><br>
+                    </div>
+                    <div class="ulica">
+                        <label for="adresa" style="font-size: 18px;"><strong>ADRESA</strong></label>
+                        <br>
+                        <label for="ulica_cislo"><strong>ULICA,ČÍSLO</strong></label>
+                        <br>
+                        <input type="text" id="ulica" name="ulica_cislo">
+                        <br><br>
+                    </div>
+                    <div class="mesto">
+                        <br><br>
+                        <label for="mesto_psc"><strong>MESTO,PSČ</strong></label>
+                        <br>
+                        <input type="text" id="mesto_psc" name="mesto_psc">
+                        <br><br>
+                    </div>
+                </div>
+                    <div class="rod_stav">
+                        <br><br>
+                        <label for="rodin_stav"><strong>RODINNÝ STAV</strong></label>
+                        <br>
+                        <input type="radio" id="slobod" name="rodin_stav" value="slobodny_slobodna" required >
+                        <label for="slobodny_slobodna">SLOBODNÝ/SLOBODNÁ</label>
+                        <input type="radio" id="zenat" name="rodin_stav" value="zenaty_vydata" required>
+                        <label for="zenaty_vydata">ŽENATÝ/VYDATÁ</label>
+                        <input type="radio" id="vdovec" name="rodin_stav" value="vdovec_vdova" required>
+                        <label for="vdovec_vdova">VDOVEC/VDOVA</label>
+                    </div>
+                <div class="form-grid">
+                    <div class="deti">
+                        <label for="pocet_deti"><strong>POČET DETÍ POD 25 ROKOV</strong></label>
+                        <br>
+                        <input type="number" id="pocet_deti" name="pocet_deti_pod_25" min="0" required>
+                        <br><br>
+                    </div>
+                    <div class="empty">
+                        <br><br>
+                        <input type="hidden">
+                    </div>  
+                </div>
+            </form>
+        </div>
+        <div class="firma_udaje">
+            <form name="poz_zivnostik">
+                <h2 style="margin-left: 20%; padding-top: 2%;">ÚDAJE O FIRME</h2>
+                <div class="form-grid">
+                    <div class="ico_firmy">
+                        <label for="ico"><strong>IČO</strong></label>
+                        <br>
+                        <input type="text" id="ico" name="ico" required>
+                        <br><br>
+                    </div>
+                    <div class="hidden">
+                        <input type="hidden">
+                        <br><br>
+                    </div>
+                    <div class="zaciatok_podnikania">
+                        <label for="zac_podnikania"><strong>Začiatok podnikania od</strong></label>
+                        <br>
+                        <input type="date" name="zaciatok_podnikania" id="zaciatok_podnikania" required>
+                        <br><br>   
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="vozidlo_udaje">
+            <form name="leas_zamestnanec">
+                <h2 style="color:black; margin-left: 20%;" >ÚDAJE O VOZIDLE</h2>
+                <div class="form-grid">
+                    <div class="vin_cislo">
+                        <label for="vin"><strong>VIN Číslo</strong></label>
+                        <br>
+                        <input type="text" id="vin_cis" name="vin_cislo">
+                        <br><br>
+                    </div>
+                    <div class="spz">
+                        <label for="spz"><strong>ŠPZ</strong></label>
+                        <br>
+                        <input type="text" id="SPZ" name="spz_vozidla">
+                        <br><br>
+                    </div>
+                    <div class="pocet_km">
+                        <label for="km"><strong>Počet KM</strong></label>
+                        <br>
+                        <input type="number" id="pocet_kilometrov" name="pocet-km">
+                        <br><br>
+                    </div>
+                    <div class="akont">
+                        <label for="akontacia"><strong>Akontácia (min. 10% z ceny vozidla)</strong></label>
+                        <br>
+                        <input type="number" id="akontacia_input" name="akont_inout">
+                        <br><br>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="prilohy">
+            <form name="poz_zivnostik">
+                <h2 style="color: black;">NAHRÁVANIE PRÍLOH</h2>
+                <label for="obp_strana1">
+                    <img src="images/upload_oblacik.png" alt="upload_ikona">
+                    Fotokópia občianskeho preukazu 1.strana
+                </label>
+                <input type="file" id="obp_strana1" name="fotokopia_obp_1strana" required>
+                <br>
+                <span id="file-name-obp_strana1">Nie je vybratý žiadny súbor</span>
+                <br><br>  
+                
+                <label for="obp_strana1">
+                    <img src="images/upload_oblacik.png" alt="upload_ikona">  
+                    Fotokópia občianskeho preukazu 2.strana
+                </label>
+                <input type="file" id="obp_strana2" name="fotokopia_obp_2strana" required>
+                <br>
+                <span id="file-name-obp_strana2">Nie je vybratý žiadny súbor</span>
+                <br><br>
+    
+                <label for="vypis_firem_uctu">
+                    <img src="images/upload_oblacik.png" alt="upload_ikona">
+                    Výpis z firemného účtu za posledné 3 mesiace
+                </label>
+                <input type="file" id="vypis_firmy" name="vypis_z_uctu_firmy" required>
+                <br>
+                <span id="file-name-vypis">Nie je vybratý žiadny súbor</span>
+                <br><br>
+    
+                <label for="dan_priznanie"> 
+                    <img src="images/upload_oblacik.png" alt="upload_ikona">    
+                    Daňové priznanie
+                </label>
+                <input type="file" id="dan_priznanie" name="danove_priznanie" required> 
+                <br>
+                <span id="file-name-dan-priznanie">Nie je vybratý žiadny súbor</span>
+                <br><br>
+    
+                <label for="danove_priznanie">
+                    <img src="images/upload_oblacik.png" alt="upload_ikona">      
+                    Potvrdenie o podaní daňového priznania
+                </label>
+                <input type="file" id="dan_priznanie_priloha" name="potvrdenie_danoveho_priznania">
+                <br>
+                <span id="file-name-danove_priznanie_priloha">Nie je vybratý žiadny súbor</span>
+                <br><br>
+
+                <label for="velky_technicky_preukaz_strana1">
+                    <img src="images/upload_oblacik.png" alt="upload_ikona">
+                    <strong>Fotokópia veľkého technického preukazu vozidla 1.strana</strong>
+                </label>
+                <input type="file" id="velky_technicky_preukaz" name="fotokopia_velkeho_technik_preukazu_strana1">
+                <br>
+                <span id="file-name-velky-technik-priloha-strana1">Nie je vybratý žiadny súbor</span>
+                <br><br>
+
+                <label for="velky_technicky_preukaz_strana2">
+                    <img src="images/upload_oblacik.png" alt="upload_ikona">
+                    <strong>Fotokópia veľkého technického preukazu vozidla 2.strana</strong>
+                </label>
+                <input type="file" id="velky_technicky_preukaz" name="fotokopia_velkeho_technik_preukazu_strana2">
+                <br>
+                <span id="file-name-velky-technik-priloha-strana2">Nie je vybratý žiadny súbor</span>
+                <br><br>
+            </form>
+        </div>
+    </div>
+
+    <!--*HYPOTEKA*-->
+    <div class="hypoteka">
+        <div class="vase_udaje">
+            <form name="hypoteka">
+                <h2 style="color:black; margin-left: 20%;" >ÚDAJE O VÁS</h2>
+                <div class="form-grid">
+                    <div id="ur_name">
+                        <label for="name"><strong>MENO</strong></label>
+                        <br>
+                        <input type="text" id="your_name" name="your_name">
+                        <br><br>
+                    </div>  
+                    <div id="priezvisko">
+                        <label for="priezvisko"><strong>PRIEZVISKO</strong></label>
+                        <br>
+                        <input type="text" id="surname" name="surname">
+                        <br><br>
+                    </div>
+                    <div class="tel">
+                        <label for="tel_cislo"><strong>TELEFÓNNY KONTAKT</strong></label>
+                        <br>
+                        <input type="tel" id="tel_cislo" name="phone_number" placeholder="947-XXX-XXX" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
+                        <br><br>
+                    </div>
+                    <div class="mail">
+                        <label for="email"><strong>E-MAILOVÁ ADRESA</strong></label>
+                        <br>
+                        <input type="email" id="email" name="email">
+                        <br><br>
+                    </div>
+                </div>
+            </form>
+            <!--
+            <div class="hypoteka-text">
+                <p>
+                    V prípade že máte záujem o úver na bývanie, zanechajte nám prosím Vašu e-mailovú adresu a telefonný kontakt.
+                    Budeme Vás čoskoro kontaktovať! <br>Ďakujem, s pozdravom Dr.Úver
+                </p>
+            </div>-->
+        </div>
+    </div>
+
     <div class="bottom_text">
         <img src="images/exclamation-mark.png" alt="exclamation-mark">
         <p>
@@ -607,7 +1109,7 @@
             a nahrať všetky potrebné prílohy.)
         </p>
     </div>
-
+    
     <button id="button-demand" onclick="location.href=''" type="button"><a><strong>ODOSLAŤ ŽIADOSŤ</strong></a></button>
 
     <footer>

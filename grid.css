@@ -945,7 +945,7 @@ input[type="file"] {
 }
 
 .pozicka_zamestnanec{
-  display: block;
+  display: none;
 }
 
 
@@ -955,6 +955,29 @@ input[type="file"] {
 
 .pozicka_dochodca{
   display: none;
+}
+
+.leasing_zamestnanec{
+  display: none;
+}
+
+.leasing_zivnostnik{
+  display: none;
+}
+
+.hypoteka{
+  display: block;
+}
+
+.hypoteka-text{
+  display: flex;
+  align-items: center;
+  padding: 2.5%;
+  margin-left:10%;
+}
+
+.hypoteka-text p{
+  color: #3b3b3b;;
 }
 
 .firma_udaje{
