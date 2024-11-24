@@ -9,22 +9,20 @@ body {
 
 @media screen and  (max-width:639px) 
 {
-  body {background-color: rgb(255,204,255)}   
+  body {background-color: rgb(255, 0, 255)}   
 }
-/*
+
 @media screen and (min-width:640px) and (max-width:1099px) 
 {
-  body {background-color: rgb(204,204,255)}
-  .blok{width:48%; margin:1%; background-color: rgb(153,153,255); height:44%; float:left}
-
+  body {background-color: rgb(221, 255, 0)} 
 }
 
 @media screen and (min-width:1100px)              
 {
-  body { background-color: rgb(153,204,255) }
-  .blok{width:23%; margin:1%; background-color: rgb(153,153,255); height:50%; float:left}
+  body { background-color: rgb(43, 254, 1) }
+
 }
-*/
+
 p{
     text-align: justify;
     color:#f5f5f5;
@@ -73,51 +71,51 @@ nav img{
 
 
 nav ul { 
-    margin-left: auto;
-    margin-right: 0.5%;
-    padding: 0; 
-    list-style: none; 
-    display: table;
-    width: 40%;
-    text-align: center;
+  margin-left: auto;
+  margin-right: 0.5%;
+  padding: 0; 
+  list-style: none; 
+  display: table;
+  width: 40%;
+  text-align: center;
 }
 
 nav li { 
-    display: table-cell; 
-    position: relative; 
-    padding: 5px 0;
-  }
-  nav ul li a {
-    color: #597cff;
-    text-transform: uppercase;
-    text-decoration: none;
-    letter-spacing: 0.15em;
-    
-    display: inline-block;
-    padding: 7.5% 5%;
-    position: relative;
-  }
-  nav ul li a:after {    
-    background: none repeat scroll 0 0 transparent;
-    bottom: 0;
-    content: "";
-    display: block;
-    height: 2px;
-    left: 50%;
-    position: absolute;
-    background: #597cff;
-    transition: width 0.3s ease 0s, left 0.3s ease 0s;
-    width: 0;
-  }
-  nav ul li a:hover:after { 
-    width: 100%; 
-    left: 0; 
-  }
-  @media screen and (max-height: 300px) {
-      ul {
-          margin-top: 40px;
-      }
-  }
+  display: table-cell; 
+  position: relative; 
+  padding: 5px 0;
+}
+nav ul li a {
+  color: #597cff;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  
+  display: inline-block;
+  padding: 7.5% 5%;
+  position: relative;
+}
+nav ul li a:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #597cff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+nav ul li a:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+@media screen and (max-height: 300px) {
+    ul {
+        margin-top: 40px;
+    }
+}
 
 footer {
   display: grid;
@@ -153,7 +151,7 @@ footer {
 
 .fa {
   padding: 2.5%;
-  font-size: 70px;
+  font-size: 1rem;
   width: 2%;
   text-align: center;
   text-decoration: none;
@@ -162,7 +160,7 @@ footer {
 }
 .fa-facebook {
   transition: 0.7s ease-out;
-  font-size: 35px;
+  font-size: 2.1875em;
 }
 
 .fa-facebook:hover {
@@ -172,7 +170,7 @@ footer {
 
 .fa-instagram{
   transition: 0.7s ease-out;
-  font-size: 35px;
+  font-size: 2.1875em;
 }
 
 .fa-instagram:hover {
@@ -181,7 +179,7 @@ footer {
 }
 
 #copyright p{
-  font-size: 14px;
+  font-size: 0.875em;
 }
 
 .kontakt_grid{
@@ -469,27 +467,22 @@ button:disabled {
 
 #main h1{
   text-align: center; 
-  font-size:50px;
+  font-size:3.125em;
 }
 
 #button1{ 
-  top: 50%;
-  left: 30%;
-  margin-right: 5%; 
+  margin-right: 2%;
   align-self:center; 
-  font-size: medium;
+  font-size:1em;
 }
 
 #button2{
-  top: 50%;
-  left:50%;
   align-self:center;
 }
 
 #main_button{
-  width: 50%;
-  height: 40%;
-  margin-left: 32.5%;
+  display: block;
+  margin-left: 37%;
 }
 
 #podmienky_img{
@@ -501,7 +494,7 @@ button:disabled {
 #podmienky_button{
   width: 60%;
   height: 60%;
-  font-size:120%;
+  font-size:1.25em;
 }
 
 input{
@@ -585,7 +578,7 @@ textarea{
 #FAQ h1{
   grid-area: text;
   align-content: center;
-  font-size: 75px; 
+  font-size: 4.6875em; 
   margin-left: 2.5%;
 }
 
