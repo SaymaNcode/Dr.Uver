@@ -1,125 +1,116 @@
-    <!DOCTYPE html>
-    <html lang="sk">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" type="text/css" href="grid.css" /> 
-        <title>Dr Uver | Produkty</title>
-    </head>
-    <body>
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="grid.css" /> 
+    <title>Dr Uver | Produkty</title>
+</head>
+<body>
 
-        <header>
-            <nav>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
                 <a href="index2.html">
-                <img src="images/logo_wo.svg" alt="logo">   
-                </a>
-                <ul>
-                    <li><a href="aboutus.html">O nás</a></li>
-                    <li><a href="products.html">Produkty</a></li>
-                    <li><a href="demand.html">Žiadost</a></li>
-                    <li><a href="kontakt2.html">Kontakt</a></li>
-                </ul>
-            </nav>
-        </header>
-
-
-            <div id="produkt_row1">
-                <div class="products_grid">
-                    <div id="uver-right">
-                        <h2>PÔŽIČKA / ÚVER NA ČOKOĽVEK</h2>
-                        <p>Hľadáte spôsob, ako rýchlo a jednoducho získať potrebné finančné prostriedky? S našimi pôžičkami a úvermi môžete jednoducho a rýchlo pokryť svoje finančné potreby. Či už potrebujete peniaze na nečakané výdavky, kúpu nového vybavenia alebo konsolidáciu dlhov, sme tu pre Vás.</p>
-                        <p>Naša ponuka pôžičiek je navrhnutá tak, aby vyhovovala vaším individuálnym potrebám. S flexibilnými podmienkami a konkurencie schopnými úrokovými sadzbami Vám poskytujeme finančnú pomoc, ktorá Vám umožní umožní dosiahnuť vaše ciele.</p>
-                        <p>Naše procesy sú rýchle a jednoduché, pretože vieme, aké dôležité je mať potrebné finančné prostriedky k dispozícii čo najskôr. Stačí vyplniť jednoduchú online žiadosť a my sa postaráme o zvyšok. Naši odborníci v oblasti financií vás budú sprevádzať v každom kroku procesu a zabezpečia, aby ste dostali potrebné finančné prostriedky v čo najkratšom čase.</p>
-                        <h4>NEVÁHAJTE A VYUŽITE NAŠU PONUKU PÔŽIČIEK, ABY STE MOHLI RÝCHLO A JEDNODUCHO RIEŠIŤ SVOJE FINANČNÉ POTREBY.</h4>
-                        <button id="button_pozicka" onclick="location.href='demand.html'" type="button" style="margin-right: 125px;"><a><b>CHCEM PÔŽIČKU</b></a></button>
-                        <br>
-                    </div>
-                    <div id="uver_img">
-                        <img src="images/maskot_uver.png" alt="Dr_uver maskot" height="500px;" width="800px;">
-                    </div>
-                </div>
+                    <img src="images/logo-bez-pozadia.png" alt="Logo" class="logo-image">
+                </a>    
             </div>
-            
-
-            <div id="produkt_row2">
-                <div class="products_grid">
-                    <div id="leasing-left">
-                        <h2 style="color:#3b3b3b;">LEASING / AUTOÚVER</h2>
-                        <p style="color:#3b3b3b;">Hľadáte spôsob ako si splniť sen o vlastnom aute, ale chýbajú Vám financie? Nezúfajte! S našou pomocou môžete jednoducho a rýchlo získať finančný leasing na vaše auto.</p>
-                        <p style="color:#3b3b3b;">Leasing je ideálnym riešením pre tých, ktorí nemajú dostatok finančných prostriedkov na nákup auta v hotovosti. S našimi flexibilnými podmienkami, a konkurencie schopnými úrokovými sadzbami Vám poskytneme finančnú pomoc, aby ste si mohli splniť svoj sen o vlastnom aute bez zbytočného čakania.</p>
-                        <ul>
-                            <li><b>Rýchlosť:</b> Vašu žiadost vybavíme rýchlo a efektívne, aby ste mohli čo najskôr vyraziť na cesty vo svojom novom aute.</li>
-                            <br>
-                            <li><b>Flexibilné podmienky:</b> Prispôsobíme leasingové podmienky vašim individuálnym potrebám a finančnej situácii.</li>
-                            <br>
-                            <li><b>Jednoduchosť:</b> Celý proces vybavíte jednoducho online, bez potreby osobnej návštevy.</li>
-                            <br>
-                            <li><b>Konkurenčné úrokové sadzby:</b> Ponúkame výhodné úrokové sadzby, ktoré znižujú celkové náklady na financovanie.</li>
-                        </ul>
-                        <br>
-                        <button id="button_leasing" onclick="location.href=''" type="button"><a><b>CHCEM LEASING</b></a></button>
-                        <br><br>
-                    </div>
-                    <div id="leasing_img">
-                        <img src="images/Maskot leasing.png" alt="Leasing_dr_uver" height="500px", width="800px">
-                        <span style="margin-left: 30%;color:#3b3b3b;"><strong>NEČAKAJTE A VYUŽITE NAŠU PONUKU<br></strong></span>
-                        <span style="margin-left: 29%;color:#3b3b3b;"><strong>LEASINGU,ABY STE MOHLI ČO NAJSKÔR<br></strong></span>
-                        <span style="margin-left: 34%;color:#3b3b3b;"><strong>SEDIEŤ ZA VOLANTOM SVOJHO<br></strong></span>
-                        <span style="margin-left: 40%;color:#3b3b3b;"><strong>VYSNÍVANÉHO AUTA.</strong></span>
-                        
-                    </div>
-                </div>
+            <div class="menu-btn-1" id="menu-btn-1">
+                <span></span>
             </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="aboutus.html">O NÁS</a></li>
+                <li><a href="products.html">PRODUKTY</a></li>
+                <li><a href="demand.html">ŽIADOSŤ</a></li>
+                <li><a href="kontakt2.html">KONTAKT</a></li>
+            </ul>
+        </nav>
+    </header>
 
-            <div id="produkt_row3">
-                <div class="products_grid">
-                    <div id="byvanie-right">
-                        <h2>ÚVER NA BÝVANIE</h2>
-                        <p>Hľadáte spôsob, ako si splniť sen o vlastnom bývaní? S našim úverom na bývanie môžete jednoducho a rýchlo získať finančné prostriedky na kúpu vášho nového domova.</p>
-                        <p>Úver na bývanie je ideálnym riešeím pre tých, ktorí chcú investovať do vlastnej nehnuteľnosti a zabezpečiť si tak stabilnú a bezpečnú budúcnosť. S našimi výhodnými podmienkami a odbornou podporou vám pomôžeme premeniť váš sen o vlastnom bývaní na skutočnosť.</p>
-                        <p>Stačí vyplniť jednoduchú online žiadosť a my sa postaráme o zvyšok. Naši odborníci v oblasti financií vám poskytnú všetky potrebné informácie a poradenstvo, aby ste mohli urobiť informované rozhodnutia a zabezpečiť si financovanie vášho nového bývania alebo výstavby vlastného domu v čo najkratšom čase.</p>
-                        <p><strong>VYUŽITE NAŠU PONUKU ÚVERU NA BÝVANIE A ZAČNITE ČO NAJSKÔR BUDOVAŤ SVOJ VYSNÍVANÝ DOMOV. NEČAKAJTE, VÁŠ NOVÝ ZAČIATOK MÔŽE BYŤ BLIŽŠIE, NEŽ SI MYSLÍTE!</strong></p>
-
-                        <button id="button_uver" onclick="location.href=''" type="button"><a><b>CHCEM ÚVER</b></a></button>
-                        <br><br>
-                    </div>
-                    <div id="hypoteka_img">
-                        <img src="images/Maskot_dom.png" alt="Dr_uver maskot na byvanie" height="500px" width="800px" style="margin-top: 2%;">
-                    </div>
-                </div>
-            </div>
-
-    <footer>
-        <div class="footer_grid" id="skratka">
-            <h3>V SKRATKE O NÁS</h3>
-            <p style="text-align: justify;">Naším cieľom je byť spoľahlivým partnerom pre<br>všetkých našich klientov.<br>Sme tu, aby sme vám pomohli dosiahnuť vaše<br>finančné ciele a zabezpečiť vašu spokojnosť.<br></p>
-            <h3>ZAČNITE NÁS SLEDOVAŤ</h3>
-            <a href="https://www.facebook.com" target="_blank" class="fa fa-facebook"></a>
-            <a href="https://www.instagram.com" target="_blank" class="fa fa-instagram"></a>
+    <div class="parent-products">
+        <div class="pozicka-bg" style="height: 600px;"></div>
+        <div class="pozicka-img">
+            <img src="images/9-16_maskot_uver.png" alt="Dr uver maskot" height="500px">
         </div>
-        <div class="footer_grid" id="navigacia">
-            <h3>NAVIGÁCIA</h3>
-            <a href="index2.html">Hlavná stránka</a>
+        <div class="pozicka-text">
+            <h2 style="padding-top: 5%;">PÔŽIČKA / ÚVER NA ČOKOĽVEK</h2>
+            <p>Hľadáte spôsob, ako rýchlo a jednoducho získať potrebné finančné prostriedky? S našimi pôžičkami a úvermi môžete jednoducho a rýchlo pokryť svoje finančné potreby. Či už potrebujete peniaze na nečakané výdavky, kúpu nového vybavenia alebo konsolidáciu dlhov, sme tu pre Vás.</p>
+            <p>Naša ponuka pôžičiek je navrhnutá tak, aby vyhovovala vaším individuálnym potrebám. S flexibilnými podmienkami a konkurencie schopnými úrokovými sadzbami Vám poskytujeme finančnú pomoc, ktorá Vám umožní umožní dosiahnuť vaše ciele.</p>
+            <p>Naše procesy sú rýchle a jednoduché, pretože vieme, aké dôležité je mať potrebné finančné prostriedky k dispozícii čo najskôr. Stačí vyplniť jednoduchú online žiadosť a my sa postaráme o zvyšok. Naši odborníci v oblasti financií vás budú sprevádzať v každom kroku procesu a zabezpečia, aby ste dostali potrebné finančné prostriedky v čo najkratšom čase.</p>
+            <h4>NEVÁHAJTE A VYUŽITE NAŠU PONUKU PÔŽIČIEK, ABY STE MOHLI RÝCHLO A JEDNODUCHO RIEŠIŤ SVOJE FINANČNÉ POTREBY.</h4>
+            <button id="button_pozicka" onclick="location.href='demand.html'" type="button"><a><b>CHCEM PÔŽIČKU</b></a></button>
+            <br>
+        </div>
+
+        <div class="leasing-bg"></div>
+        <div class="leasing-text"> 
+            <h2 style="color:#3b3b3b;">LEASING / AUTOÚVER</h2>
+            <p style="color:#3b3b3b;">Hľadáte spôsob ako si splniť sen o vlastnom aute, ale chýbajú Vám financie? Nezúfajte! S našou pomocou môžete jednoducho a rýchlo získať finančný leasing na vaše auto.</p>
+            <p style="color:#3b3b3b;">Leasing je ideálnym riešením pre tých, ktorí nemajú dostatok finančných prostriedkov na nákup auta v hotovosti. S našimi flexibilnými podmienkami, a konkurencie schopnými úrokovými sadzbami Vám poskytneme finančnú pomoc, aby ste si mohli splniť svoj sen o vlastnom aute bez zbytočného čakania.</p>
+            <ul>
+                <li><b>Rýchlosť:</b> Vašu žiadost vybavíme rýchlo a efektívne, aby ste mohli čo najskôr vyraziť na cesty vo svojom novom aute.</li>
+                <br>
+                <li><b>Flexibilné podmienky:</b> Prispôsobíme leasingové podmienky vašim individuálnym potrebám a finančnej situácii.</li>
+                <br>
+                <li><b>Jednoduchosť:</b> Celý proces vybavíte jednoducho online, bez potreby osobnej návštevy.</li>
+                <br>
+                <li><b>Konkurenčné úrokové sadzby:</b> Ponúkame výhodné úrokové sadzby, ktoré znižujú celkové náklady na financovanie.</li>
+            </ul>
+            <br>
+            <button id="button_leasing" onclick="location.href='demand.html'" type="button"><a><b>CHCEM LEASING</b></a></button>
             <br><br>
-            <a href="aboutus.html">O nás</a>
+        </div>
+        <div class="leasing-img"> 
+            <img src="images/Maskot--leasing.png" alt="maskot leasing" height="500px">
+            <span style="margin-left: 30%;color:#3b3b3b;"><strong>NEČAKAJTE A VYUŽITE NAŠU PONUKU<br></strong></span>
+            <span style="margin-left: 29%;color:#3b3b3b;"><strong>LEASINGU,ABY STE MOHLI ČO NAJSKÔR<br></strong></span>
+            <span style="margin-left: 34%;color:#3b3b3b;"><strong>SEDIEŤ ZA VOLANTOM SVOJHO<br></strong></span>
+            <span style="margin-left: 40%;color:#3b3b3b;"><strong>VYSNÍVANÉHO AUTA.</strong></span>
+        </div>
+        
+        <div class="hypoteka-bg"> </div>
+        <div class="hypoteka-img"> 
+            <img src="images/Maskot_dom-smaller.png" alt="maskot hypoteka" height="500px">
+        </div>
+        <div class="hypoteka-text-prod"> 
+            <h2 style="padding-top: 5%;">ÚVER NA BÝVANIE</h2>
+            <p>Hľadáte spôsob, ako si splniť sen o vlastnom bývaní? S našim úverom na bývanie môžete jednoducho a rýchlo získať finančné prostriedky na kúpu vášho nového domova.</p>
+            <p>Úver na bývanie je ideálnym riešeím pre tých, ktorí chcú investovať do vlastnej nehnuteľnosti a zabezpečiť si tak stabilnú a bezpečnú budúcnosť. S našimi výhodnými podmienkami a odbornou podporou vám pomôžeme premeniť váš sen o vlastnom bývaní na skutočnosť.</p>
+            <p>Stačí vyplniť jednoduchú online žiadosť a my sa postaráme o zvyšok. Naši odborníci v oblasti financií vám poskytnú všetky potrebné informácie a poradenstvo, aby ste mohli urobiť informované rozhodnutia a zabezpečiť si financovanie vášho nového bývania alebo výstavby vlastného domu v čo najkratšom čase.</p>
+            <p><strong>VYUŽITE NAŠU PONUKU ÚVERU NA BÝVANIE A ZAČNITE ČO NAJSKÔR BUDOVAŤ SVOJ VYSNÍVANÝ DOMOV. NEČAKAJTE, VÁŠ NOVÝ ZAČIATOK MÔŽE BYŤ BLIŽŠIE, NEŽ SI MYSLÍTE!</strong></p>
+            <button id="button_uver" onclick="location.href='demand.html'" type="button"><a><b>CHCEM ÚVER</b></a></button>
             <br><br>
-            <a href="products.html">Produkty</a>
-            <br><br>
-            <a href="demand.html">Žiadosť</a>
-            <br><br>
-            <a href="kontakt2.html">Kontakt</a>
-            <br><br>
-            <a href="faq.html">FAQ - Najčastejšie otázky</a>
-            <br><br>      
+        </div>
+    </div>
+
+    <footer style="margin-top: -5%;">
+        <div class="footer_container">
+            <div class="footer_nav" id="skratka">
+                <h3>V SKRATKE O NÁS</h3>
+                <p>Naším cieľom je byť spoľahlivým partnerom pre<br>všetkých našich klientov. Sme tu, aby sme vám pomohli dosiahnuť vaše finančné ciele a zabezpečiť vašu spokojnosť.</p>
+                <h3>ZAČNITE NÁS SLEDOVAŤ</h3>
+                <div class="social_links">
+                    <a href="https://www.facebook.com" target="_blank" class="fa fa-facebook"></a>
+                    <a href="https://www.instagram.com" target="_blank" class="fa fa-instagram"></a>
+                </div>
+            </div>
+            <div class="footer_nav" id="navigacia">
+                <h3>NAVIGÁCIA</h3>
+                <a href="index2.html">Hlavná stránka</a>
+                <a href="aboutus.html">O nás</a>
+                <a href="products.html">Produkty</a>
+                <a href="demand.html">Žiadosť</a>
+                <a href="kontakt2.html">Kontakt</a>
+                <a href="faq.html">FAQ - Najčastejšie otázky</a>
+            </div>
         </div>
         <div id="copyright">
             <p><b>Copyright © 2024 Dr. Úver Prievidza</b></p>
         </div>	
     </footer>  
-
-    </body>
-    </html>
+</body>
+</html>

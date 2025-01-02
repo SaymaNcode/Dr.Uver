@@ -14,22 +14,27 @@
 <body>
     
     <header>
-        <nav>
-            <a href="index2.html">
-            <img src="images/logo_wo.svg" alt="logo">   
-            </a>   
-            <ul>
-                <li><a href="aboutus.html">O nás</a></li>
-                <li><a href="products.html">Produkty</a></li>
-                <li><a href="demand.html">Žiadost</a></li>
-                <li><a href="kontakt2.html">Kontakt</a></li>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index2.html">
+                    <img src="images/logo-bez-pozadia.png" alt="Logo" class="logo-image">
+                </a>    
+            </div>
+            <div class="menu-btn-1" id="menu-btn-1">
+                <span></span>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="aboutus.html">O NÁS</a></li>
+                <li><a href="products.html">PRODUKTY</a></li>
+                <li><a href="demand.html">ŽIADOSŤ</a></li>
+                <li><a href="kontakt2.html">KONTAKT</a></li>
             </ul>
         </nav>
     </header>
 
     <section>
-        <div class="kontakt_grid">
-            <div id="kontakt_left">
+        <div class="parent-kontakt">
+            <div class="kontakt"> 
                 <h2 style="color:white">KONTAKTUJTE NÁS</h2>
                 <br>
                 <img src="images/email_ikona.png" alt="email_ikona" height="50px" width="50px">
@@ -38,57 +43,53 @@
                 <img src="images/internet_ikonka.png" alt="internet_ikonka" height="50px" width="50px" style="margin-top: 20px;">
                 <p><strong>www.druver.sk</strong></p>
             </div>
+            
+            <div class="write"> 
+                <h2 style="color: #f6f6f6;">NAPÍŠTE NÁM</h2>
+                <form action="" method="_POST">
+                    <label for="name" style="color:white;">MENO</label>
+                    <br>
+                    <input type="text" id="name" name="meno"style="width:300px;" required>
+                    <br><br>
+                    <label for="email" style="color:white;">E-MAIL</label>
+                    <br>
+                    <input type="email" id="mail" name="mail"style="width:300px;" required>
+                    <br><br>
+                    <label for="subject"style="color:white;">SPRÁVA</label>
+                    <br>
+                    <textarea id="subject" name="subject" style="height:160px;width:300px;" required></textarea>
+                    <br><br>
+                    <button id="button_odoslat" type="submit"><a><b>ODOSLAŤ</b></a></button>
+                    <br><br>
+                </form>
+            </div>
         </div>
-        
-        <div class="kontakt_grid">
-            <h2 style="color: #f6f6f6;">NAPÍŠTE NÁM</h2>
-            <form action="" method="_POST">
-                <label for="name" style="color:white;">MENO</label>
-                <br>
-                <input type="text" id="name" name="meno"style="width:300px;" required>
-                <br><br>
-                <label for="email" style="color:white;">E-MAIL</label>
-                <br>
-                <input type="email" id="mail" name="mail"style="width:300px;" required>
-                <br><br>
-                <label for="subject"style="color:white;">SPRÁVA</label>
-                <br>
-                <textarea id="subject" name="subject" style="height:160px;width:300px;" required></textarea>
-                <br><br>
-                <button id="button_odoslat" type="submit"><a><b>ODOSLAŤ</b></a></button>
-            </form>
-        </div>
+    </section>  
 
-    </section>
-    
     <footer>
-        <div class="footer_grid" id="skratka">
-            <h3>V SKRATKE O NÁS</h3>
-            <p>Naším cieľom je byť spoľahlivým partnerom pre<br>všetkých našich klientov.<br>Sme tu, aby sme vám pomohli dosiahnuť vaše<br>finančné ciele a zabezpečiť vašu spokojnosť.<br></p>
-            <h3>ZAČNITE NÁS SLEDOVAŤ</h3>
-            <a href="https://www.facebook.com" target="_blank" class="fa fa-facebook"></a>
-            <a href="https://www.instagram.com" target="_blank" class="fa fa-instagram"></a>
-        </div>
-        <div class="footer_grid" id="navigacia">
-            <h3>NAVIGÁCIA</h3>
-            <a href="index2.html">Hlavná stránka</a>
-            <br><br>
-            <a href="aboutus.html">O nás</a>
-            <br><br>
-            <a href="products.html">Produkty</a>
-            <br><br>
-            <a href="demand.html">Žiadosť</a>
-            <br><br>
-            <a href="kontakt2.html">Kontakt</a>
-            <br><br>
-            <a href="faq.html">FAQ - Najčastejšie otázky</a>
-            <br><br>      
+        <div class="footer_container">
+            <div class="footer_nav" id="skratka">
+                <h3>V SKRATKE O NÁS</h3>
+                <p>Naším cieľom je byť spoľahlivým partnerom pre<br>všetkých našich klientov. Sme tu, aby sme vám pomohli dosiahnuť vaše finančné ciele a zabezpečiť vašu spokojnosť.</p>
+                <h3>ZAČNITE NÁS SLEDOVAŤ</h3>
+                <div class="social_links">
+                    <a href="https://www.facebook.com" target="_blank" class="fa fa-facebook"></a>
+                    <a href="https://www.instagram.com" target="_blank" class="fa fa-instagram"></a>
+                </div>
+            </div>
+            <div class="footer_nav" id="navigacia">
+                <h3>NAVIGÁCIA</h3>
+                <a href="index2.html">Hlavná stránka</a>
+                <a href="aboutus.html">O nás</a>
+                <a href="products.html">Produkty</a>
+                <a href="demand.html">Žiadosť</a>
+                <a href="kontakt2.html">Kontakt</a>
+                <a href="faq.html">FAQ - Najčastejšie otázky</a>
+            </div>
         </div>
         <div id="copyright">
             <p><b>Copyright © 2024 Dr. Úver Prievidza</b></p>
         </div>	
     </footer> 
-    
-
 </body>
 </html>
